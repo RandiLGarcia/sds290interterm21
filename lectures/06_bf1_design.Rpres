@@ -1,0 +1,133 @@
+Basic Factorial Design, BF[1]
+========================================================
+author: Prof Randi Garcia
+date: February 20, 2019
+autosize: true
+transition: linear
+transition-speed: default
+font-family: 'Helvetica'
+
+
+Reading Free-Write (5 minutes)
+========================================================
+
+  1. Explain the design prinicipal of randomization. How does randomization convert 
+     variability due to differences in the experimental material into chance-like error?
+  3. If you have time, write any questions you have from the reading and/or ideas that are still unclear.
+
+Announcements
+========================================================
+
+- Project proposal due on Friday 2/22 at 11:55p on Moodle
+- HW #4: **RE CH 3**: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18 
+    - due on Feb 21 at Midnight 
+    - envelope outside of my door   
+
+Agenda
+========================================================
+
+- Levels of measurement
+- Warm-up and Group time
+- ANOVA for the BF[1] Design    
+
+What's Your Response?
+========================================================
+Categorical
+
+- **nominal:** categorical variable whose levels have no ordering.
+    - gender, race, etc.
+- **ordinal:** categorical variable whose levels have an order. 
+    - education level
+
+What's Your Response?
+========================================================
+Numerical
+
+- **interval:** numerical variable where we assume the distance between points is equal. No true zero.
+    - scores on a “self-esteem” scale, measured from 1 to 7 
+- **ratio:** numerical variable that has a true zero point. 
+    - students’ times to complete cognitive task
+    - enzyme concentration
+
+Warm up - Barley Sprouting
+=======================================================
+
+**DISCUSS IN YOUR PROJECT GROUPS**
+
+Barley seeds are divided into 30 lots of 100 seeds each. The 30 lots are then divided at random into ten different groups of three lots each, with each group receiving a different treatment combination. The amount of water given per day is varied (4 ml or 8 ml). Also, the number of seeds sprouted is measured at different lengths of time randomly assigned to the groups. Thus, the researchers can understand the effect of the age of the seeds (1 week, 3 weeks, 6 weeks, 9 weeks, and 12 weeks), as well as water, on growth. 
+
+Group time
+=======================================================
+[Project instructions](http://www.science.smith.edu/~rgarcia/sds290-S18/project.html)
+
+F-ratios and the F-distribution
+=======================================================
+Our test statistics in ANOVA is called the F ratio. It's our evidence again the null hypothesis 
+that there are no treatment effects. 
+
+$$F = \frac{{MS}_{Treatments}}{{MS}_{E}}$$
+
+If the null hypothesis is true, then F is a random variable $\sim F({df}_{Treatments}, {df}_{E})$. The [F-distribution](https://en.wikipedia.org/wiki/F-distribution).
+
+```{r, eval=FALSE}
+qplot(x = rf(500, 3, 4), geom = "density")
+```
+
+F-Test and the null hypothesis
+=======================================================
+
+$${H}_{0}:{\alpha}_{1}={\alpha}_{2}={\alpha}_{3}={\alpha}_{4}$$
+
+where ${\alpha}_{i}$ is the treatment efect for the $i$th condition.
+
+We can find the p-value for our F calculation (test statistic) with the following code
+
+```{r, eval=FALSE}
+pf(17.68, 3, 4, lower.tail = FALSE)
+```
+
+Treatment effects and F-ratios for all designs
+=======================================================
+- We cannot ALWAYS use the same formula for the treatment effects. It depends 
+  on *inside* and *outside* factors.
+- We do not ALWAYS divide the ${MS}_{factor}$ by ${MS}_{E}$. To test some effects 
+  in some designs we will need a different denominator. 
+
+Inside-outside Factors
+=======================================================
+- One factor is *inside* another if each group of the first (inside) fits completely 
+  inside some group of the second (outside) factor.
+- Estimated effect for a factor = Average for the factor - sum of estimated effects 
+  for all outside factors. 
+- The **sum of estimated effects for all outside factors** is called the **partial fit**. 
+- Thus, the general rule is:
+
+$$Effect = Average - Partial Fit$$
+
+Inside-outside Factors
+=======================================================
+```{r animals-example, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidyr)
+library(knitr)
+animals <- read.csv("/Users/rgarcia/Dropbox/Smith-Teaching/SDS-290/Spring2018/www/animal_data.csv", header = TRUE)
+
+animals <- animals %>%
+  mutate(student = seq.int(1, nrow(animals))) %>%
+  select(student, order, animal, cute_calm, scary_calm, cute_happy, scary_happy, 
+         cute_nerv, scary_nerv, cute_scared, scary_scared) %>%
+  gather(var, value, cute_calm:scary_scared) %>%
+  separate(var, c("cue", "emotion"), sep = "_") %>%
+  spread(emotion, value) %>%
+  unite(cell, cue, animal, remove = FALSE) %>%
+  select(student, animal, cue, calm) %>%
+  group_by(animal) %>%
+  slice(5:8) %>%
+  spread(cue, calm) %>%
+  arrange(animal)
+
+kable(animals)
+```
+- Draw the factor diagram as a hierarchy of inside and outside factors. 
+- Use this rule to calculate effects for this example we we did for the leafhoppers.
+

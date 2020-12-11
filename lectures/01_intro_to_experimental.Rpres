@@ -1,0 +1,110 @@
+Research Design and Analysis 
+========================================================
+author: Prof Randi Garcia
+date: January 28, 2019
+autosize: true
+transition: linear
+transition-speed: default
+font-family: 'Helvetica'
+<!-- font-import: http://fonts.googleapis.com/css?family=Risque -->
+
+
+Welcome to **SDS/MTH 290**! 
+
+Please complete the course questionnaire
+
+Introductions
+========================================================
+
+Who am I?
+
+- Prof. Randi Garcia
+- She/her pronouns
+- My goals for this course 
+- Favorite animal: Hamsters!
+
+========================================================
+
+![Pigs](01_intro_to_experimental-figure/pigs1.JPG)
+
+***
+
+![Pigs](01_intro_to_experimental-figure/pigs2.JPG)
+
+
+
+#Goals
+========================================================
+Now it is your turn. But first, let's do a 2-minute free write
+
+- On the back of the questionnaire
+- For 2 minutes, write about:
+    - Your goals for this course,
+    - What you hope to learn, and
+    - When in your week you plan to read/study for this course.
+
+Introductions
+========================================================
+In groups of 3, introduce yourselves
+
+- Name
+- Pronouns
+- Little on your goals
+- Favorite animal
+
+Introduction to SDS/MTH 290
+========================================================
+
+- [Course website](http://www.science.smith.edu/~rgarcia/sds290-S19/index.html)
+- Syllabus
+- Projects!!
+
+What makes a study an "Experiment"?
+========================================================
+incremental: true
+- Can you assign experimental material to conditions?
+- You've created those conditions 
+- If the material alredy comes in different "varieties", then it's an *observational* study
+    - People with different psychiatric illnesses
+    - Different species of plants
+- Sometimes one "study" will have both **experimental** and **observational** variables
+
+Our First Experiment
+========================================================
+incremental: true
+Get into groups of ~8---Count off! 
+
+As you participate in the experiment at the link below, remember: 
+- what you saw 
+- what you did
+- the order in which it happened. 
+
+[Click here to participate!!](bit.ly/2DM6b4a)
+
+Or type this into a browser: **bit.ly/2DM6b4a**
+
+Our First Experiment
+========================================================
+incremental: true
+In your groups: 
+- Take turns describing what you saw/did.
+- Your objective, as a group, is to describe the FULL experimental design.
+
+Discussion questions:
+- What were all of the possibilities? How do you think that was determined?
+- Which conditions were distributed *across* people, and which *within* people?
+- What do you think are the possible research questions answered by this study?
+
+
+<!-- New Section -->
+<!-- ==================================== -->
+<!-- type: section -->
+
+<!-- Prompt Slide -->
+<!-- ==================================== -->
+<!-- type: prompt -->
+
+<!-- Sample Variance -->
+<!-- ======================================================== -->
+
+<!-- $$\sigma^2 = \frac{\sum_{i=1}^{n}(x_i - \mu)^2} {n-1}$$ -->

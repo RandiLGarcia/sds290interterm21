@@ -1,0 +1,147 @@
+Complete Block Design
+========================================================
+author: Prof Randi Garcia
+date: March 20, 2019
+autosize: true
+transition: linear
+transition-speed: default
+font-family: 'Helvetica'
+
+
+Reading Free-Write (5 minutes)
+========================================================
+
+  1. What are the three ways to create blocks in a design? Give an example of each.
+  2. What questions do you have from today's reading? What do you feel fuzzy on?
+
+Announcements
+========================================================
+
+- HW #6 due on Thursday 11:55pm on Moodle
+    - CITI training on Research Ethics
+- Projects
+    - Final approval due on Mar 25
+- Gina DelCorazon lunchtime talk (free food!)
+    - Friday, March 22nd, 12:10p in McConnell B15
+- SDS Presentation of the major (free food!)
+    - Tuesday, March 26th, 12:15p in Ford Atrium
+
+Agenda
+========================================================
+
+- The BF[2] design in R
+- Blocking principal
+
+
+ANOVA Source Table for BF[2]
+=======================================================
+
+$${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk}$$
+
+| Source | SS | df | MS | F |
+|------:|:-----:|:-----:|:------:|:------:|
+| Treatment A | $\sum_{i=1}^{a}bn(\bar{y}_{i..}-\bar{y}_{…})^{2}$ | $a-1$ | $\frac{{SS}_{A}}{{df}_{A}}$ | $\frac{{MS}_{A}}{{MS}_{E}}$ |
+| Treatment B | $\sum_{j=1}^{b}an(\bar{y}_{.j.}-\bar{y}_{…})^{2}$ | $b-1$ | $\frac{{SS}_{B}}{{df}_{B}}$ | $\frac{{MS}_{B}}{{MS}_{E}}$ |
+| Interaction AB | $n\sum_{i=1}^{a}\sum_{j=1}^{b}(\bar{y}_{ij.}-\bar{y}_{i..}-\bar{y}_{.j.}+\bar{y}_{…})^{2}$ | $(a-1)(b-1)$ | $\frac{{SS}_{AB}}{{df}_{AB}}$ | $\frac{{MS}_{AB}}{{MS}_{E}}$ |
+| Error | $\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{k=1}^{n}({y}_{ijk}-\bar{y}_{ij.})^{2}$ | $ab(n-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
+
+BF[2] in R
+=======================================================
+
+[See BF2 code](http://www.science.smith.edu/~rgarcia/sds290-S18/lectures/09_bf2_inR.Rmd)
+
+
+Example
+=======================================================
+
+Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. Three branches are randomly selected from each tree, and 3 cm by 3 cm patches are marked on each branch. The number of mealybugs on the patch is counted. The three treatments then get randomly assigned to the three branches for each tree. After three days the mealybugs are counted again. The change in number of mealybugs is computed ($before-after$).
+
+Example - Basic Factorial Design
+=======================================================
+
+Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. The number of mealybugs on each tree is counted. The three treatments then get randomly assigned to the three trees each. After three days the mealybugs are counted again. The change in number of mealybugs is computed ($before-after$).
+
+Example
+=======================================================
+
+Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). Baby rats were separated into five groups of 40 to form groups of approximately the same weight. The 40 rats in each group were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
+
+Example - Basic Factorial Design [2]
+=======================================================
+
+Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). 200 baby rats were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
+
+Example
+=======================================================
+
+This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.   
+
+Example - Basic Factorial Design
+=======================================================
+
+This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use nine subjects, and randomly assign subjects to one of the three delivery methods. The area under the time-concentration curve is recorded for each subject after beging given the drug.
+
+
+Design Principal: Blocking
+=======================================================
+
+- Blocking is using a factor that is not of research interest
+    – But there may be differences across blocks on the response variable
+- A "block" is a level of a blocking factor
+- We use blocking to improve precision/statistical power of our factor of interest
+
+
+Three Ways to Block
+=======================================================
+
+1. Sort units into similar groups
+    - Albino rats
+2. Subdivide larger chunks of material into sets of smaller peices
+    - Mealybug trees
+3. Reuse subjects or material in each of sveral times slots
+    - Drug study
+
+
+Complete Block Desgin, CB[1]
+=======================================================
+
+- Experimental material are separated into groups (or reused) to create similar units 
+- Then each unit within a block is then is assigned one level of the factor of interest
+- "Complete Block" means that every block x treatment combination is tested
+
+Inappropriate Insects
+=======================================================
+
+Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. Three branches are randomly selected from each tree, and 3 cm by 3 cm patches are marked on each branch. The number of mealybugs on the patch is counted. The three treatments then get randomly assigned to the three branches for each tree. After three days the mealybugs are counted again. The change in number of mealybugs is computed ($before-after$).
+
+Inappropriate Insects
+=======================================================
+
+```{r, echo=FALSE}
+library(tidyr)
+library(dplyr)
+library(knitr)
+
+tree <- c(rep("tree1",3), rep("tree2",3), rep("tree3", 3),rep("tree4", 3), rep("tree5", 3))
+treatment <- rep(c("water", "spores", "oil"), 5)
+bugs_change <- c(-9, -4, 4, 18, 29, 29, 10, 4, 14, 9, -2, 14, -6, 11, 7)
+
+mealybugs <- data.frame(tree, treatment, bugs_change)
+
+mealybugs %>%
+  spread(tree, bugs_change) %>%
+  kable()
+```
+
+Draw the factor diagram, labeling inside outside factors. 
+
+Formal ANOVA for CB[1]
+=======================================================
+
+$${y}_{ijk}={\mu}+{\tau}_{i}+{\beta}_{j}+{e}_{ijk}$$
+
+| Source | SS | df | MS | F |
+|------:|:-----:|:-----:|:------:|:------:|
+| Treatment | $\sum_{i=1}^{a}b(\bar{y}_{i.}-\bar{y}_{..})^{2}$ | $a-1$ | $\frac{{SS}_{T}}{{df}_{T}}$ | $\frac{{MS}_{T}}{{MS}_{E}}$ |
+| Blocks | $\sum_{j=1}^{b}a(\bar{y}_{.j}-\bar{y}_{..})^{2}$ | $b-1$ | $\frac{{SS}_{B}}{{df}_{B}}$ | $\frac{{MS}_{B}}{{MS}_{E}}$ |
+| Error | $\sum_{i=1}^{a}\sum_{j=1}^{b}({y}_{ij}-\bar{y}_{i.}-\bar{y}_{.j}+\bar{y}_{..})^{2}$ | $(a-1)(b-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |

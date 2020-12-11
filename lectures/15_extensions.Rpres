@@ -1,0 +1,133 @@
+Extending the Four Basic Designs
+========================================================
+author: Prof Randi Garcia
+date: April 3, 2019
+autosize: true
+transition: linear
+transition-speed: default
+font-family: 'Helvetica'
+
+
+Reading Free-Write (5 minutes)
+========================================================
+
+People with severe psychiatric problems find it harder to focus their attention; this theory predicts that psychiatrically normal subjects would be less affected than others by distracting sounds while they tried to remember things. In an experiment, participants were classified as 1) schizophrenic, 2) schizotypal, 3) borderline, or 4) psychiatrically normal. In each of a series of trials, subjects heard a voice read a series of digits and were asked to repeat them back. The digit strings were either 3, 4, or 7 digits long, and the trials either had a distracting male voice between the female voice reading the letters or it did not have interference. One response was defined by lumping together all the trials of a given type, such as four digits/no interference, and adding up the number of times the subject remembered the string correctly. 
+
+Reading Free-Write Answers
+========================================================
+
+  1. Response is number of correct recollections
+  2. Factors: disorder; digit length; distraction; subject
+      - Levels: 4, 3, 2, ?
+      - digit length is crossed with distration
+      - digit length is crossed with disorder
+      - distraction is crossed with disorder
+      - Subjects are blocks; time slots are units
+  3. This is a SP/RM[1,2]
+  4. Disorder is between, observational; digit length and distraction are within, experimental 
+
+  
+Announcements
+========================================================
+
+- HW 7 is due Friday at 12:00pm
+- [HW 8](labs/homework9.html) is due on Friday 4/18 at 12:00p (on Moodle)
+- Project data collection should be underway!
+    
+Agenda
+======================================================== 
+
+- ANOVA for Split plot design
+- Analysis in R
+- Extending designs by factorial crossing
+
+Example: Diabetic Dogs
+=======================================================
+
+The disease diabetes affects the rate of turnover of lactic acid in a system of biochemical reactions called the Cori cycle. This experiment compares two methods of using radioactive carbon-14 to measure rate of turnover. Method 1 is injection all at once, and method 2 is infused continuously. 10 dogs were sorted into two groups, 5 were controls and 5 had their pancreas removed (to make it diabetic). The rate of turnover was then measured twice for each dog, once for each method. The order of the two methods was randomly assigned. 
+
+Draw the factor diagram for the data on page 263. (ignore the ordering for now)
+
+Algebraic Notation for the Spilt Plot Design
+=======================================================
+
+$${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j(i)}+{\gamma}_{k}+({\alpha\gamma})_{ik}+{e}_{ijk}$$
+
+- ${\mu}$ is the benchmark
+- ${\alpha}_{i}$ effect of level i of the between-blocks factor, $i$ from $1$ to $a$
+- ${\beta}_{j(i)}$ effect of block $j$ (for level $i$ of the within block factor), $j$ from $1$ to $n$
+- ${\gamma}_{k}$ effect of level $k$ of the within-block factor, $k$ from $1$ to $t$
+- $({\alpha\gamma})_{ik}$ interaction effect for level $i$ of the between-blocks factor with level $k$ of the within-blocks factor
+
+Formal ANOVA for the Spilt Plot Design
+=======================================================
+
+| Source | SS | df | MS | F |
+|------:|:-----:|:-----:|:------:|:------:|
+| Between | $\sum_{i=1}^{a}tn(\bar{y}_{i..}-\bar{y}_{...})^{2}$ | $a-1$ | $\frac{{SS}_{A}}{{df}_{A}}$ | $\frac{{MS}_{A}}{{MS}_{B}}$ |
+| Blocks | $t\sum_{i=1}^{a}\sum_{j=1}^{n}(\bar{y}_{ij.}-\bar{y}_{i..})^{2}$ | $N-a$ | $\frac{{SS}_{B}}{{df}_{B}}$ | $\frac{{MS}_{B}}{{MS}_{E}}$ |
+| Within | $\sum_{k=1}^{t}N(\bar{y}_{..k}-\bar{y}_{...})^{2}$ | $t-1$ | $\frac{{SS}_{T}}{{df}_{T}}$ | $\frac{{MS}_{T}}{{MS}_{E}}$ |
+| Interaction | $\sum_{i=1}^{a}\sum_{k=1}^{t}n(\bar{y}_{i.k}-\bar{y}_{i..}-\bar{y}_{..k}+\bar{y}_{...})^{2}$ | $(a-1)(t-1)$ | $\frac{{SS}_{AT}}{{df}_{AT}}$ | $\frac{{MS}_{AT}}{{MS}_{E}}$ |
+| Error | $\sum_{i=1}^{a}\sum_{j=1}^{n}\sum_{k=1}^{t}({y}_{ijk}-\bar{y}_{i.k}-\bar{y}_{ij.}+\bar{y}_{i..})^{2}$ | $(N-a)(t-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
+
+Extensions by Factorial Crossing
+=======================================================
+
+We can now imagine adding complexity to these four basic designs by including additional factors crossed with our structural factors. 
+
+Take our diabetic dogs example, and now let us add in the fact that **the order of the two methods was randomly assigned.** What design do we have now?  
+    - We have an order factor and there are two levels: order 1 and order 2  
+    - The new design is a SP/RM[2,1]
+    
+Example
+=======================================================
+
+The purpose of this experiment was to study the way one species of crabgrass competed with itself and with another species for nitrogen (N), phosphorus (P), and potassium (K). Bunches of crabgrass were planted in vermiculite, in 16 Styrofoam cups; after the seeds head srouted, the plants were thinned to 20 plants per cup. Each of the 16 cups were randomly assigned to get one of 8 nutrient combinations added to its vermiculite. For example, yes-nitrogen/no-phosphorus/yes-potassium. The response is mean dry weight per plant, in milligrams.
+
+Example
+=======================================================
+
+Worms that live at the mouth of a river must deal with varying concentrations of salt. Osomoregulating worms are able to maintain reltaively constant concentration of salt in the body. An experiment wanted to test the effects of mixtures of salt water on two species of worms: Nereis virens (N) and Goldfingia gouldii (G). Eighteen worms of each species were weighted, then randomly assigned in equal numbers to one of three conditions. Six worms of each kind were placed in 100% sea water, 67% sea water, or 33% sea water. The worms were then weighted after 30, 60, and 90 minutes, then placed in 100% sea water and weighted one last time 30 minutes later.  The response was body weight as percentage of initial body weight. 
+
+Analysis in R
+=======================================================
+
+[See r code](15_extensions_inR.Rmd)
+
+Compound within Block Factors
+=======================================================
+
+In an experiment, researchers wanted to compare how easy it is to remember four different kinds of words: 1) concrete, frequent: fork, brtoher, radio,... 2) concrete, infrequent: blimp, warthog, fedora, ... 3) abstract, frequent: truth, anger, foolishness, ... and 4) abstract, infrequent: slot, vastness, apostasy, ...
+
+Ten students in a pscyhology lab served as subject. During each of the 4 time slots, subjects heard a list of words from one of the four kinds, and then was tested for recall.
+
+Compound within Block Factors
+=======================================================
+
+There are two possible models for chance error in models with compound within-block factors.
+  1. The additive model  
+  2. The non-additive model
+  
+Compound within Block Factors
+=======================================================
+
+1. **The additive model** - assumes that chance error is the same for all within-block factors, thus we could pool residual terms.
+2. **The non-additive model** - does not make this (often incorrect) assuption, but tests using this model are lower in power. 
+
+How can we decide? 
+- Think about whether or not you would expect block X treatment interaction effects. If you would, then the additive model will be wrong. 
+
+Rule for Compound within Block F-ratios (non-additive)
+=======================================================
+
+$$F = \frac{{MS}_{Factor}}{{MS}_{Blocks\times Factor}}$$
+
+Rule for Compound between Block F-ratios 
+=======================================================
+
+$$F = \frac{{MS}_{Factor}}{{MS}_{Blocks}}$$
+
+Analysis in R
+=======================================================
+
+[See r code](15_extensions_inR.Rmd)

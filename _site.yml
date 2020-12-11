@@ -1,0 +1,128 @@
+name: www
+exclude:
+- makefile
+- data
+- gfx
+- lectures/figure
+navbar:
+  title: SDS/MTH 290 - Spring 2019
+  left:
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: Syllabus
+    href: syllabus.html
+  - text: Schedule
+    href: schedule.html
+  - text: Resources
+    menu:
+    - text: Helpful Links
+      href: resources.html
+    - text: Troubleshooting R Markdown
+      href: https://github.com/SmithCollege-SDS/sds-public/blob/master/rmarkdown_problems.Rmd
+  - text: Lectures
+    menu:
+    - text: Notes
+    - text: 01 - Intro to Experimental Design
+      href: lectures/01_intro_to_experimental.html
+#    - text: 02 - Four Basic Designs
+#      href: lectures/02_four_designs.html
+#    - text: 03 - Four Basic Designs (cont.)
+#      href: lectures/03_informal_anova.html
+#    - text: 04 - Informal ANOVA
+#      href: lectures/03b_informal_anova.html      
+#    - text: 04 - Experiment Decisions
+#      href: lectures/04_exp_decisions.html
+#    - text: 05 - Formal ANOVA
+#      href: lectures/05_formal_anova.html
+#    - text: 06 - Formal ANOVA (cont.)
+#      href: lectures/05b_formal_anova.html      
+#    - text: 07 - BF[1] Design
+#      href: lectures/06_bf1_design.html  
+#    - text: 08 - BF[1] Design in R    
+#      href: lectures/07_bf1_inR.html
+#    - text: 09 - BF[2] Design
+#      href: lectures/09_bf2_design.html      
+#    - text: 10 - Exam 1 Review   
+#      href: lectures/08_exam1_review.html
+#    - text: Review Questions
+#      href: Exam_1_Review_Questions.html
+#    - text: 11 - BF[2] Design (cont.)
+#      href: lectures/10_bf2_design_cont.html   
+#    - text: 12 - CB[1] Design
+#      href: lectures/11_cb1_design.html         
+#    - text: 13 - CB[1] Design (cont.)
+#      href: lectures/12_cb1_design_cont.html       
+#    - text: 14 - Latin Square Design
+#      href: lectures/13_spitplot_design.html  
+#    - text: 15 - SP/RM[1,1] Design
+#      href: lectures/14_spitplot_design_cont.html       
+#    - text: 16 - Extending the Basic Designs
+#      href: lectures/15_extensions.html   
+#    - text: 17 - Extending the Basic Designs (cont.)
+#      href: lectures/16_extensions_cont.html    
+#    - text: 18 - Multiple Comparisons
+#      href: lectures/17_multiple_comparisons.html         
+#    - text: 18 - Fisher Assumptions
+#      href: lectures/18_fisher_assumptions.html 
+#    - text: 19 - Exam 2 Review   
+#      href: lectures/18_exam2_review.html      
+#    - text: Code
+#    - text: 01 - Four Designs
+#      href: lectures/02_four_designs.Rmd
+#    - text: 02 - Informal Analysis
+#      href: lectures/03_informal_anova.Rmd
+#    - text: 03 - Formal ANOVA
+#      href: lectures/05_formal_anova.Rmd
+#    - text: 07 - BF[1] Design in R
+#      href: lectures/07_bf1_inR.Rmd
+#    - text: 04 - BF[2] Design in R
+#      href: lectures/09_bf2_inR.Rmd    
+#    - text: 05 - CB[1], Latin Square, SP/RM[1,1] Design in R
+#      href: lectures/13_spitplot_design_inR.Rmd       
+#    - text: 05 - Extensions in R
+#      href: lectures/15_extensions_inR.Rmd    
+#    - text: 06 - Multiple Comparisons
+#      href: lectures/18_multiple_comparisons_and_assumptions.Rmd             
+  - text: Homework
+    menu:
+    - text: Problem Sets
+    - text: 'HW1a: Record your names on Moodle'
+      href: http://moodle.smith.edu
+    - text: 'HW1b: Complete the project preferences survey'
+      href: http://bit.ly/290preferences
+    - text: 'HW2: Review Exercises (p. 34-37), 3, 6, 9, 11, 13a, 14, 16, 17'
+      href: homework.html
+    - text: 'HW3: Review Exercises (p. 57), 1-3, 5, 6 (but using R)'
+      href: labs/homework3.html
+    - text: 'HW4: RE CH 3: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18'
+      href: homework.html
+    - text: 'HW5: Using software; Due 2/28 at 11:55p'
+      href: labs/homework5.html
+    - text: 'HW6: CITI Training; Due 3/21 at 11:55p'
+      href: HW6_CITI-Training.pdf
+    - text: 'HW7: RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9'
+      href: homework.html  
+    - text: 'HW8: Using software - BF[2], Compound factors'
+      href: labs/homework9.html        
+#    - text: 'HW9: Using software-last homework'      
+#      href:           
+  - text: Project
+    menu:
+#    - text: Project
+    - text: Instructions
+      href: project.html
+    - text: Schedule
+      href: project_schedule.html
+#    - text: Advice
+output:
+  html_document:
+    theme: journal
+    highlight: textmate
+    css: include/randilgarcia.css
+    include:
+      after_body: include/after_body.html
+    lib_dir: site_libs
+    self_contained: no
+output_dir: docs
+
