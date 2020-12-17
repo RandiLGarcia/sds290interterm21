@@ -14,7 +14,8 @@ Please read the specified sections *before* class that day.
 + Introduction to the course
 + [Short experiment](https://smithcollege.qualtrics.com/jfe/form/SV_71nqdhEpN8frd6B)
 + Homework:
-    + Hw #1: record your name on Moodle
+    + HW #1a: record your name on Moodle
+    + HW #1b: record your name on Moodle
   </div>
   
   <div class="col-md-3">
