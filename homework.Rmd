@@ -1,30 +1,33 @@
 ---
 title: 'Homework'
 ---
-#. Due Thursday, January 31st:
+#. Due Thursday, January 7th:
     + HW #1a: Record your names on Moodle name coach
-    + HW #1b: Complete the [survey of project preferences](http://bit.ly/290preferences)
+    + HW #1b: [CITI Training](HW6_CITI-Training.pdf)
     
-#. Due Thursday, February 7th:
-    + HW #2: Review Exercises (RE) (p. 34-37), 3, 6, 9, 11, 13a, 14, 16, 17
+#. Due Tuesday, January 12th:
+    + [HW #2: Getting started with R](labs/intro_to_r.html)
 
-#. Due Thursday, February 14th:
-    + [HW #3: **RE Ch 2**: 1-3, 5, 6 (but using R)](labs/homework3.html)
+#. Due Thursday, January 14th:
+    <!-- + HW #3: Review Exercises (RE) (p. 34-37), 3, 6, 9, 11, 13a, 14, 16, 17  -->
     
-#. Due Thursday, February 21st:
-    + HW #4: **RE CH 3**: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18
+#. Due Tuesday, January 19th:
+    <!-- + [HW #4: **RE Ch 2** (p. 57): 1-3, 5, 6 (but using R)](labs/homework3.html) -->
   
-#. Due Thursday, February 28th:
-    + [HW #5: Using software](labs/homework5.html)
+#. Due Thursday, January 21st:
+    <!-- + HW #5: **RE CH 3**: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18 -->
     
-#. Due Thursday, March 21st:
-    + [HW #6: CITI Training](HW6_CITI-Training.pdf)
+#. Due Tuesday, January 26th:
+    <!-- + [HW #6: Using software](labs/homework5.html) -->
     
-#. Due Friday, April 5th:
-    + HW #7: **Ch 7**: A1-A3, A6, B5-B6, C1-C3, C6-C9
+#. Due Tuesday, February 2nd:
+    <!-- + HW #7: TBD -->
     
-#. Due Friday, April 18th:
-    + [HW #8: using software](labs/homework9.html)
+#. Due Thursday, February 4th:
+    <!-- + [HW #8: **Ch 7**: A1-A3, A6, B5-B6, C1-C3, C6-C9](labs/homework7.html) -->
     
+#. Due Tuesday, February 9th:
+    <!-- + [HW #9: using software](labs/homework9.html) -->
+
 
 

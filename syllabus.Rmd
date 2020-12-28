@@ -8,7 +8,7 @@ About the Course {#about-the-course .smith}
 #### Instructor
 
 -   Randi Garcia (`rgarcia@smith.edu`). Randi's
-    office hours will be held on Tuesdays from 10:00a-11:00a, and Thursdays from 1:00p-3:00p, 
+    office hours will be held on Mondays and Thursdays 3-5pm, 
     or by appointment.
 
 #### Description and Goals
@@ -162,7 +162,7 @@ Assignment <- c("Homework", "Participation", "Quizzes",
 
 `Percent of Total` <- c("40%", "15%", "15%", "10%", "20%", "100%")
 
-`Due Date` <- c("Tues and Thurs", "Daily", "March 7", "April 25", "", "")
+`Due Date` <- c("Tues and Thurs", "Daily", "Jan 28 and Feb 11", "Jan 21", "Feb 11", "")
 
 kable(cbind(Assignment, `Percent of Total`, `Due Date`))
 ```
