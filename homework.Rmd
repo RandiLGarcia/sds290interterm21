@@ -3,7 +3,7 @@ title: 'Homework'
 ---
 #. Due Thursday, January 7th:
     + HW #1a: Record your names on Moodle name coach
-    + HW #1b: [CITI Training](HW6_CITI-Training.pdf)
+    + HW #1b: [CITI Training](HW1b_CITI-Training.pdf)
     
 #. Due Tuesday, January 12th:
     + [HW #2: Getting started with R](labs/intro_to_r.html)

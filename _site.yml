@@ -17,6 +17,8 @@ navbar:
     menu:
     - text: Helpful Links
       href: resources.html
+    - text: Downloading R and RStudio
+      href: Downloading_R_and_RStudio.pdf
 #    - text: Troubleshooting R Markdown
 #      href: https://github.com/SmithCollege-SDS/sds-public/blob/master/rmarkdown_problems.Rmd
   - text: Lectures
