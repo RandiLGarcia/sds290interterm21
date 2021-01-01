@@ -94,8 +94,10 @@ Participation has two components: 1) being present and 2) engaging in class acti
 is an important part of the process of learning statistics, and we need you in class to help stimulate 
 discussion. You can make a valuable contribution to the discussion by bringing up connections between our 
 work and study designs you have seen in other courses, in the newspaper, or in research literature. I 
-realize that, especially during these difficult times, you won’t always be able to get to class, and I 
-allow **four** free absences before I start deducting from your grade (see assignment section below) due to absence.
+realize that, especially during these difficult times, you won’t always be able to get to class and I 
+ask that if you cannot make it to class that you please let me know why via a Slack direct message. There 
+be many different ways to participate in this course (Zoom sessions, Slack, office hours, group projects, 
+etc.) and you can demonstrate your participation in a combination of ways. 
 
 
 #### Collaboration
