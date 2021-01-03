@@ -12,11 +12,11 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Jan 4
 + Introduction to the course
-<!-- + [Short experiment](https://smithcollege.qualtrics.com/jfe/form/SV_71nqdhEpN8frd6B) -->
++ [Short experiment](https://smithcollege.qualtrics.com/jfe/form/SV_71nqdhEpN8frd6B)
 + Evening session: Optional office hours time
 + Homework:
     + HW #1a: record your name on Moodle
-    + [HW #1b: CITI training](HW1b_CITI-Training.pdf)
+    + [HW #1b: CITI training](HW 1b_CITI-Training.pdf)
   </div>
   
   <div class="col-md-3">
