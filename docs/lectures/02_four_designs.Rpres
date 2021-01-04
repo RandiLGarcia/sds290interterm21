@@ -1,38 +1,59 @@
 Four Basic Designs
 ========================================================
 author: Prof Randi Garcia
-date: January 30, 2019
+date: January 5, 2021
 autosize: true
 transition: linear
 transition-speed: default
 font-family: 'Helvetica'
 
-Reading Free-Write (5 minutes)
+Reading contemplation question
 ========================================================
 
-  1. Was this design principal of *crossing* present in Kelly's hamster experiment? Explain.
-  2. If you have time, write one or two questions you have from the reading, or ideas that you feel fuzzy on.  
+  1. Was this design principal of *crossing* present in Kelly's hamster experiment?
 
 Announcements
 ========================================================
 
-- Next week:
-    - Five College DataFest 2019 information session 
-        - **when:** Wed Feb 6th, 7-8p
-        - **where:** SR 301
-    - Brittney Baily lunchtime talk, pizza! 
-        - **when:** Thurs Feb 7, 12:10p-1:10p
-        - **where:** McConnell B15
-        
-        
-Homework #2 is due on 2/7 at 11:55p
+- Slack issues
+- Registration
+
+Our First Experiment
 ========================================================
+incremental: true
+Get in breakout groups of ~8 we will discuss. 
 
-Review Exercises (p. 34-37): 3, 6, 9, 11, 13a, 14, 16, 17
+As you participate in the experiment at the link below, remember: 
+- what you saw 
+- what you did
+- the order in which it happened. 
 
-- handwritten
-- submit it envelope outside of my office door
+To participate, find the experiment link in the course schedule!!
+**http://bit.ly/sds290interterm21**
+
+Our First Experiment
+========================================================
+incremental: true
+In your groups: 
+- Take turns describing what you saw/did.
+- Your objective, as a group, is to describe the FULL experimental design.
+
+Discussion questions:
+- What were all of the possibilities? How do you think that was determined?
+- Which conditions were distributed *across* people, and which *within* people?
+- What do you think are the possible research questions answered by this study?
         
+        
+What makes a study an "Experiment"?
+========================================================
+incremental: true
+- Can you assign experimental material to conditions?
+- You've created those conditions
+- If the material alredy comes in different "varieties", then it's an *observational* study
+    - People with different psychiatric illnesses
+    - Different species of plants
+- Sometimes one "study" will have both **experimental** and **observational** variables
+
 ========================================================
 
 ![](02_four_designs-figure/cute-cat.png)
@@ -52,16 +73,6 @@ Review Exercises (p. 34-37): 3, 6, 9, 11, 13a, 14, 16, 17
 
 ![](02_four_designs-figure/scary-dog.png)
 ![](02_four_designs-figure/quest.png)
-
-Our First Experiment
-========================================================
-- In your groups: 
-    - Your objective, as a group, was to describe the FULL experimental design.
-
-- Discussion questions:
-    - What were all of the possibilities? How do you think that was determined?
-    - Which conditions were distributed *across* people, and which *within* people?
-    - What do you think are the possible research questions answered by this study?
 
 Sources of Variability
 =======================================================
@@ -146,7 +157,6 @@ Design 4: Split Plot/Repeated Measures Design
 
 ![](02_four_designs-figure/SP_RM_data.png)
 ![](02_four_designs-figure/SP_RM_small.png)
-
 
 The Meats 
 =======================================================

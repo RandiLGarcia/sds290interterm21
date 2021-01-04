@@ -20,7 +20,7 @@ navbar:
     - text: Downloading R and RStudio
       href: Downloading_R_and_RStudio.pdf
     - text: Modern Data Science with R
-    - href: https://mdsr-book.github.io/mdsr2e/
+      href: https://mdsr-book.github.io/mdsr2e/
     - text: Troubleshooting R Markdown
       href: https://smithcollege-sds.github.io/sds-www/rmarkdown_problems.html
   - text: Lectures
@@ -29,8 +29,8 @@ navbar:
     - text: 01 - Intro to Experimental Design
       href: lectures/01_intro_to_experimental.html
     - text: 02 - Four Basic Designs
-#      href: lectures/02_four_designs.html
-#    - text: 03 - Four Basic Designs (cont.)
+      href: lectures/02_four_designs.html
+    - text: 03 - Four Basic Designs (cont.)
 #      href: lectures/03_informal_anova.html
 #    - text: 04 - Informal ANOVA
 #      href: lectures/03b_informal_anova.html      
