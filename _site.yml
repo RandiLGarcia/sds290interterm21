@@ -114,7 +114,7 @@ navbar:
     menu:
 #    - text: Project
     - text: 'Mini project 1'
-#      href: mini-project-1.html
+      href: mini-project-1.html
     - text: 'Mini Project 2'
 #      href: mini-project-2.html
 #    - text: Advice
