@@ -53,7 +53,7 @@ incremental: true
 
 Sources of Variability
 =======================================================
-
+incremental: true
 Think about all of the reasons calmness scores may differ (vary).
 
 1. Vary across conditions 
