@@ -32,7 +32,7 @@ navbar:
       href: lectures/02_four_designs.html
     - text: 03 - Four Basic Designs (cont.)
       href: lectures/02b_four_designs.html
-#    - text: 04 - Informal ANOVA
+    - text: 04 - Informal ANOVA
 #      href: lectures/03_informal_anova.html      
 #    - text: 04 - Experiment Decisions
 #      href: lectures/04_exp_decisions.html
