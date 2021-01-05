@@ -16,7 +16,7 @@ Please read the specified sections *before* class that day.
 + Evening session: Optional office hours time
 + Homework:
     + HW #1a: record your name on Moodle
-    + [HW #1b: CITI training](HW 1b_CITI-Training.pdf)
+    + HW #1b: CITI training
   </div>
   
   <div class="col-md-3">
