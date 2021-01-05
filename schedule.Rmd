@@ -62,7 +62,7 @@ Please read the specified sections *before* class that day.
 #### Tue, Jan 12
 + Formal ANOVA 
 + Homework due today:
-    + [**HW #2 due today at 9:20a**](intro_to_r.html)
+    + [**OPTIONAL HW #2 recommended due today at 9:20a**](labs/intro_to_r.html)
     + Read Ch 3.1-3.3
   </div>
   
