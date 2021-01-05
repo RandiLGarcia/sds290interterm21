@@ -15,8 +15,11 @@ Reading contemplation question
 Announcements
 ========================================================
 
-- Slack issues
+- Slack issues?
 - Registration
+- Zoom login tomorrow for breakout rooms
+  - Complete the course survey (Moodle)
+- Lord of the rings!
 
 Our First Experiment
 ========================================================
