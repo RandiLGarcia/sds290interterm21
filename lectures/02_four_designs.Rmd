@@ -21,7 +21,7 @@ animals <- read_csv("https://randilgarcia.github.io/sds290interterm21/animal_dat
 
 Cleaning the data
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 animals <- animals %>%
   mutate(pID = seq.int(1, nrow(animals))) %>%
   select(pID, order, animal, 

@@ -41,7 +41,8 @@ These projects are a major component of the class, and successful completion is 
 # Research Questions {#assignment .unnumbered}
 
 After settling on a research question, you will 
-learn how to use Qualtrics and begin creating your experimental stimuli. 
+learn how to use Qualtrics and begin creating your experimental stimuli. **Reading chapter 
+four of your textbook could be helpful as you decide on the content of your study.** 
 
 Picking a good research question might be tricky. But start by brain storming things about 
 people that you are interested in. Perhaps you are interested in how stressful people 
