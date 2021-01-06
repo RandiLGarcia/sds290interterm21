@@ -1,7 +1,7 @@
 ---
 title: "02 - Four Designs"
 author: "Randi L. Garcia"
-date: "January 30, 2019"
+date: "January 6, 2021"
 output: html_document
 ---
 
@@ -15,7 +15,8 @@ library(tidyr)
 library(ggplot2)
 library(readr)
 
-animals <- read_csv("animal_data.csv")
+animals <- read_csv("https://randilgarcia.github.io/sds290interterm21/animal_data.csv")
+#hamsters <- read_csv("https://randilgarcia.github.io/sds290interterm21/KellysHamsters.csv")
 ```
 
 Cleaning the data
@@ -50,6 +51,6 @@ qplot(x = calm, data = animals_long, bins = 5)
 
 ```{r}
 #looking at variability by condition
-ggplot(animals_long, aes(x = animal, fill = cue, y = scared)) +
+ggplot(animals_long, aes(x = animal, fill = cue, y = calm)) +
   geom_boxplot()
 ```
