@@ -1,7 +1,6 @@
 ---
 title: "03 - Informal Analysis"
 author: "Randi L. Garcia"
-date: "February 11, 2019"
 output: html_document
 ---
 

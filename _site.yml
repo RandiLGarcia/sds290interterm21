@@ -35,9 +35,9 @@ navbar:
     - text: 03 - Four Basic Designs (cont.)
       href: lectures/02b_four_designs.html
     - text: 04 - Informal ANOVA
-#      href: lectures/03_informal_anova.html      
-#    - text: 04 - Experiment Decisions
-#      href: lectures/04_exp_decisions.html
+      href: lectures/03_informal_anova.html      
+    - text: 05 - Informal ANOVA (cont.)
+#      href: lectures/03b_informal_anova.html  
 #    - text: 05 - Formal ANOVA
 #      href: lectures/05_formal_anova.html
 #    - text: 06 - Formal ANOVA (cont.)
@@ -75,8 +75,8 @@ navbar:
     - text: Code
     - text: 01 - Four Designs
       href: lectures/02_four_designs.Rmd
-#    - text: 02 - Informal Analysis
-#      href: lectures/03_informal_anova.Rmd
+    - text: 02 - Informal ANOVA
+      href: lectures/03_informal_anova.Rmd
 #    - text: 03 - Formal ANOVA
 #      href: lectures/05_formal_anova.Rmd
 #    - text: 07 - BF[1] Design in R
