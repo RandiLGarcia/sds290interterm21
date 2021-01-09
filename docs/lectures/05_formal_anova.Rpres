@@ -1,7 +1,7 @@
 Formal ANOVA
 ========================================================
 author: Prof Randi Garcia
-date: February 13, 2018
+date: January 12, 2021
 autosize: true
 transition: linear
 transition-speed: default
@@ -31,6 +31,12 @@ Agenda
 - Fisher Assumptions review
 - Decomposition
 - Analysis of variance (ANOVA)
+
+Simulation Activity: Assembly Line Metaphor
+=======================================================
+- [Simulation code/lecture](http://www.science.smith.edu/~rgarcia/sds290-S19/lectures/03_informal_anova.Rmd).
+- Get into your project groups.
+- Talk about where the six assumptions are present in the simulation.
 
 C. Constant effects
 =======================================================

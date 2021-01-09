@@ -37,8 +37,8 @@ navbar:
     - text: 04 - Informal ANOVA
       href: lectures/03_informal_anova.html      
     - text: 05 - Informal ANOVA (cont.)
-#      href: lectures/03b_informal_anova.html  
-#    - text: 05 - Formal ANOVA
+      href: lectures/03b_informal_anova.html  
+    - text: 06 - Formal ANOVA
 #      href: lectures/05_formal_anova.html
 #    - text: 06 - Formal ANOVA (cont.)
 #      href: lectures/05b_formal_anova.html      

@@ -8,7 +8,7 @@ Please read the specified sections *before* class that day.
 </div> <!--closing "past" div-->
 
 
-<div class="row">
+<div class="row past">
   <div class="col-md-3">
 #### Mon, Jan 4
 + Introduction to the course
@@ -71,6 +71,7 @@ Please read the specified sections *before* class that day.
 + Formal ANOVA (cont.) 
 + Hypothesis tests and confidence intervals 
 + Evening session: **MP1**
+    + Have your study ready to launch **by Tue Jan 19, 9:20a**
 + Homework due today:
     + Read Ch 3.4-3.5 + Appendix 1
   </div>
@@ -78,6 +79,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Thurs, Jan 14
 + BF[1] design
++ Analysis of the BF[1] Design in R
 + Homework due today:
   + **HW #3 due on today at 11:55p**
   + Read 5.1-5.2
@@ -95,32 +97,29 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Tue, Jan 19
 + MP1 Data Collection
-+ Analysis of the BF[1] Design in R
 + Factorial crossing and the BF[2] design
 + Homework due today:
     + Read 5.3-5.4, 5.6
-    + Read Ch 6.1-6.2 
     + **Mini Project 1 due Thursday morning** (upload to Moodle by Midnight)
     + [**HW #4 due today at 9:20a**](labs/homework3.html)
-    
   </div>
   
   <div class="col-md-3">
 #### Wed, Jan 20
 + Formal ANOVA of the BF[2]
-+ Analysis of the BF[2] Design in R
-+ Evening session: **MP1**
++ Evening session: 
+    + **MP1** 
+    + Analysis of the BF[2] Design in R
 + Homework due today:
-    + Read Ch 6.3, 6.5 (optional)
+    + Read Ch 6.1-6.3, 6.5 (optional)
   </div>
   
   <div class="col-md-3">
 #### Thurs, Jan 21
-- Mini project presentations
++ Analysis of the BF[2] Design in R (cont.)
 + **Quiz 1 HANDED OUT**
 + Homework due today:
-    + **MP1 Due Today at 9:20a**
-    + **HW #5 due thurs at 11:55p**
+    + **HW #5 due tonight at 11:55p**
   </div>
 </div>
 
@@ -132,6 +131,7 @@ Please read the specified sections *before* class that day.
 + Blocking and the CB[1] design 
 + Evening session: **MP2**
 + Homework due today:
+    + **MP1 due today at 9:20a**
     + Read Ch 7.1
   </div>
   
