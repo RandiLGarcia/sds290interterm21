@@ -24,7 +24,7 @@ navbar:
     - text: Troubleshooting R Markdown
       href: https://smithcollege-sds.github.io/sds-www/rmarkdown_problems.html
     - text: Qualtrics
-      href: smithcollege.qualtrics.com
+      href: https://smithcollege.qualtrics.com/
   - text: Lectures
     menu:
     - text: Notes
@@ -76,7 +76,7 @@ navbar:
     - text: 01 - Four Designs
       href: lectures/02_four_designs.Rmd
     - text: 02 - Informal ANOVA
-      href: lectures/03_informal_anova.Rmd
+      href: lectures/02_informal_anova.Rmd
 #    - text: 03 - Formal ANOVA
 #      href: lectures/05_formal_anova.Rmd
 #    - text: 07 - BF[1] Design in R
