@@ -12,7 +12,7 @@ title: 'Homework'
     + HW #3: Review Exercises (RE) (p. 34-37), 3, 6, 9, 11, 13a, 14, 16 and 17 (see instructions directly above problems 16 and 17)
     
 #. Due Tuesday, January 19th:
-    <!-- + [HW #4: **RE Ch 2** (p. 57): 1-3, 5, 6 (but using R)](labs/homework3.html) -->
+    + [HW #4: **RE Ch 2** (p. 57): 1-3, 5, 6 (but using R)](labs/homework4_W21.html)
   
 #. Due Thursday, January 21st:
     <!-- + HW #5: **RE CH 3**: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18 -->
