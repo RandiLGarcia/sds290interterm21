@@ -40,7 +40,7 @@ Now it is your turn. But first, let's do a 2-minute free write
     - Your goals for this course,
     - What you hope to learn, and
     - Some fun things you'll do over J-term
--PollEverywhere!
+- PollEverywhere!
 
 Introductions
 ========================================================
@@ -57,40 +57,7 @@ Introduction to SDS/MTH 290
 - Course website at http://bit.ly/sds290interterm21
 - Syllabus
 
-What makes a study an "Experiment"?
-========================================================
-incremental: true
-- Can you assign experimental material to conditions?
-- You've created those conditions
-- If the material alredy comes in different "varieties", then it's an *observational* study
-    - People with different psychiatric illnesses
-    - Different species of plants
-- Sometimes one "study" will have both **experimental** and **observational** variables
 
-Our First Experiment
-========================================================
-incremental: true
-Get in breakout groups of ~8 we will discuss. 
-
-As you participate in the experiment at the link below, remember: 
-- what you saw 
-- what you did
-- the order in which it happened. 
-
-To participate, find the experiment link in the course schedule!!
-**http://bit.ly/sds290interterm21**
-
-Our First Experiment
-========================================================
-incremental: true
-In your groups: 
-- Take turns describing what you saw/did.
-- Your objective, as a group, is to describe the FULL experimental design.
-
-Discussion questions:
-- What were all of the possibilities? How do you think that was determined?
-- Which conditions were distributed *across* people, and which *within* people?
-- What do you think are the possible research questions answered by this study?
 
 
 <!-- New Section -->

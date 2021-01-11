@@ -13,6 +13,14 @@ Reading Free-Write (5 minutes)
   1. Think about 1 potential idea for your MP1. What are your two factors called? What are the levels of those factors?
   2. Begin to sketch a parallel dot graph based on hypothetical data you might collect for MP1. What goes on the x-axis? What goes on the y-axis? What about a legend describing the type or colors of your dots?
 
+Annoucements
+========================================================
+
+- Office hours today 3-5p
+- Office hour session tonight 7:05-8:20p
+  - We'll be doing HW3 problems
+  - Answering questions about MP1
+
 Agenda
 ========================================================
 
@@ -68,8 +76,6 @@ Six Fisher Assumptions
 =======================================================
 type: section
 
-![](04_exp_decisions-figure/biostats_gosling_transform.png)
-
 Six Fisher Assumptions
 =======================================================
 ![](04_exp_decisions-figure/CA-SINZ2.png)
@@ -83,14 +89,16 @@ Six Fisher Assumptions
 - N. Normally distributed residuals
 - Z. Zero mean residuals
 
-Parallel Dot Graphs
-=======================================================
-
-- See code **02-Informal ANOVA** from the course website
 
 Breakout rooms
 =======================================================
 
 - Take turns giving one or two ideas for your MP1. Give each presenter thoughts or suggestions before moving onto the next person.
 - Raise your hand if anyone in your group has a question!
+
+
+Parallel Dot Graphs
+=======================================================
+
+- See code **02-Informal ANOVA** from the course website
 
