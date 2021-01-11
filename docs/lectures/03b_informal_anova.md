@@ -16,10 +16,12 @@ Reading Free-Write (5 minutes)
 Annoucements
 ========================================================
 
-- Office hours today 3-5p
+- Randi's office hours today 3-5p
+  - Waiting room system
 - Office hour session tonight 7:05-8:20p
   - We'll be doing HW3 problems
   - Answering questions about MP1
+- Format for HW3
 
 Agenda
 ========================================================
