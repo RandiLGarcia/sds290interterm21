@@ -25,8 +25,7 @@ Agenda
 ========================================================
 
 - CA-SINZ Assumptions in assembly line code
-- Analysis of variance (ANOVA)
-- Levels of measurement and group time
+- Formally present Analysis of variance (ANOVA)
 
 Warm up - Gender Bias in STEM
 =======================================================
