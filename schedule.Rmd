@@ -58,7 +58,7 @@ Please read the specified sections *before* class that day.
   + Read [How to spot good Covid-19 vaccine trials results when you see them](https://www.statnews.com/2020/11/10/spot-good-covid-19-vaccine-trials-results-when-you-see-them/)
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Tue, Jan 12
 + Formal ANOVA 
 + Homework due today:

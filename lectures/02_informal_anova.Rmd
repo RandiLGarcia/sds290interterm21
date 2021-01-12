@@ -43,7 +43,7 @@ Or parallel dot graph
 
 ```{r}
 ggplot(animals, aes(x = animal, y = calm, color = cue)) +
-  geom_jitter(height = 0.10, width = 0.05, alpha = .7)
+  geom_jitter(height = 0.00, width = 0.05, alpha = .7)
 ```
 
 # Assembly Line Metaphor
