@@ -151,7 +151,6 @@ The second argument is the mean.
 ```
 
 
-
 <!-- Leafhopper survival -->
 <!-- ======================================================= -->
 <!-- It is reasonable to assume that the structure of a sugar molecule has something to do with its food value.  -->
