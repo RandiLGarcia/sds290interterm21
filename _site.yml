@@ -39,8 +39,8 @@ navbar:
     - text: 05 - Informal ANOVA (cont.)
       href: lectures/03b_informal_anova.html  
     - text: 06 - Formal ANOVA
-#      href: lectures/05_formal_anova.html
-#    - text: 06 - Formal ANOVA (cont.)
+      href: lectures/05_formal_anova.html
+    - text: 07 - Formal ANOVA (cont.)
 #      href: lectures/05b_formal_anova.html      
 #    - text: 07 - BF[1] Design
 #      href: lectures/06_bf1_design.html  

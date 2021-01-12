@@ -100,7 +100,6 @@ animals_sim <- animals_sim %>%
   
 ```
 
-
 Lastly, we create a blank calm variable such that we can simulate it next.  
 
 ```{r, simulation}
@@ -119,7 +118,7 @@ animals_sim <- animals_sim %>%
          + cue_effect 
          + interaction_effect 
          + student_effect
-         + rnorm(68, 0, 0.65)) #SIMULATED universial factor
+         + rnorm(82, 0, 0.68)) #SIMULATED universial factor
 ```
 
 ## Comparing Simulated Data to Real Data

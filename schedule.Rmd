@@ -49,7 +49,7 @@ Please read the specified sections *before* class that day.
 ***
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Mon, Jan 11
 + Informal ANOVA (cont.)
 + Evening session: Optional office hours time
@@ -71,7 +71,7 @@ Please read the specified sections *before* class that day.
 + Formal ANOVA (cont.) 
 + Hypothesis tests and confidence intervals 
 + Evening session: **MP1**
-    + Have your study ready to launch **by Tue Jan 19, 9:20a**
+    + Submit a Word doc of your survey **by Mon Jan 18, 9:20a**
 + Homework due today:
     + Read Ch 3.4-3.5 + Appendix 1
   </div>
@@ -92,6 +92,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Jan 18
 + **NO CLASS - MLK day**
++ Office hours still on: 3-5p
   </div>
   
   <div class="col-md-3">
