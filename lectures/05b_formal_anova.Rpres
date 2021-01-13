@@ -103,6 +103,9 @@ Leafhopper survival
 It is reasonable to assume that the structure of a sugar molecule has something to do with its food value.
 An experiment was conducted to compare the effects of four sugar diets on the survival of leafhoppers. The four diets were glucose and fructose (6-carbon atoms), sucrose (12-carbon), and a control (2% agar). The experimenter prepared two dishes with each diet, divided the leafhoppers into eight groups of equal size, and then randomly assigned them to dishes. Then she counted the number of days until half the insects had died in each group.
 
+- [**NEW** Jamboard link](https://jamboard.google.com/d/1wCCPFOSPEyVJAh0LXyg3yc9FYu6h_4PqPPpzrjr9lnE/edit?usp=sharing)
+- [old jamboard](https://jamboard.google.com/d/1mmGtXITXmD908iyWsHCe3RO1TbxkuEjvavIUneLgZR4/viewer)
+
 Decomposing the data
 =======================================================
 ```{r, echo = FALSE}
