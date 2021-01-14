@@ -122,6 +122,8 @@ navbar:
     - text: 'Mini Project 2'
 #      href: mini-project-2.html
 #    - text: Advice
+  - text: Book Office Hours
+    href: https://randigarcia.youcanbook.me/
 output:
   html_document:
     theme: journal
