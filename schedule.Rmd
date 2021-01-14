@@ -76,7 +76,7 @@ Please read the specified sections *before* class that day.
     + Read Ch 3.4-3.5 + Appendix 1
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Thurs, Jan 14
 + BF[1] design
 + Analysis of the BF[1] Design in R
