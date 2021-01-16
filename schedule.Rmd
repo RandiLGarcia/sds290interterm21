@@ -79,7 +79,6 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3 past">
 #### Thurs, Jan 14
 + BF[1] design
-+ Analysis of the BF[1] Design in R
 + Homework due today:
   + **HW #3 due on today at 11:55p**
   + Read 5.1-5.2
@@ -100,28 +99,29 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Tue, Jan 19
 + MP1 Data Collection
-+ Factorial crossing and the BF[2] design
++ Analysis of the BF[1] Design in R
 + Homework due today:
-    + Read 5.3-5.4, 5.6
+    + Read Ch 5.3-5.4
     + **Mini Project 1 due Monday morning** (upload to Moodle by Midnight)
     + [**HW #4 due today at 9:20a**](labs/homework4_21.html)
   </div>
   
   <div class="col-md-3">
 #### Wed, Jan 20
++ Factorial crossing and the BF[2] design
 + Formal ANOVA of the BF[2]
 + Evening session: 
     + **MP1** 
-    + Analysis of the BF[2] Design in R
 + Homework due today:
-    + Read Ch 6.1-6.3, 6.5 (optional)
+    + Read Ch 6.1-6.2
   </div>
   
   <div class="col-md-3">
 #### Thurs, Jan 21
-+ Analysis of the BF[2] Design in R (cont.)
++ Analysis of the BF[2] Design in R
 + **Quiz 1 HANDED OUT**
 + Homework due today:
+    + Read Ch 6.3
     + **HW #5 due tonight at 11:55p**
   </div>
 </div>
@@ -132,9 +132,9 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Jan 25
 + Blocking and the CB[1] design 
-+ Evening session: **MP2**
++ Evening session: Optional office hours
 + Homework due today:
-    + **MP1 due today at 9:20a**
+    + **MP1 due this morning at 9:20a**
     + Read Ch 7.1
   </div>
   
@@ -169,35 +169,33 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Feb 1
 + The Split Plot/Repeated Measures design (cont.)
-+ Scatterplots for data sets with blocks 
 + Evening session: **MP2**
 + Homework due today:
-    + Read Ch. 7.4-7.5
+    + Read Ch. 7.4
   </div>
   
   <div class="col-md-3">
 #### Tue, Feb 2
-+ Extending the basic designs
++ Scatterplots for data sets with blocks
 + Homework due today:
-    + Read Ch 9.1-9.2
+    + Read Ch 7.5 
     + [**HW #7 due today at 9:20a**](homework.html)
   </div>
   
   <div class="col-md-3">
 #### Wed, Feb 3
-+ Extending the basic designs (cont.)
-+ BF[3+] Designs
++ Extending the basic designs
 + Evening session: **MP2**
 + Homework due today:
-    + Read Ch 9.3-9.5
+    + Read Ch 9.1-9.2
   </div>
   
   <div class="col-md-3">
 #### Thurs, Feb 4
-+ Multiple Comparisons
++ BF[3+] Designs
 + **Quiz 2 HANDED OUT**
 + Homework due today:
-    + Read Ch. 11.1-11.2
+    + Read Ch. 9.3
     + **HW #8 due thurs at 11:55p**
   </div>
 </div>
@@ -207,31 +205,33 @@ Please read the specified sections *before* class that day.
 <div class="row">
   <div class="col-md-3">
 #### Mon, Feb 8
-+ Visualizing 3-factor interactions
 + Compound within-blocks factors
 + Homework due today:
-    + Read Ch 9.5 (review sectin 9.3)
+    + Read Ch 9.4
   </div>
   
   <div class="col-md-3">
 #### Tue, Feb 9
-+ Presentations
++ Visualizing 3-factor interactions
 + Homework due today:
+    + Read Ch 9.5
     + [**HW #9 due today at 9:20a**](labs/homework9.html)
   </div>
   
   <div class="col-md-3">
 #### Wed, Feb 10
-+ Presentations
++ Multiple Comparisons
++ Evening session: **MP2**
 + Homework due today:
+    + Read Ch 11.1-11.2
   </div>
   
   <div class="col-md-3">
 #### Thurs, Feb 11
-+ Presentations
++ MP2 Presentations
 + Homework due today:
-    + **MP2 Due Today at 9:20a**
-    + **Quiz 2 DUE TODAY at 11:55p**
+    + **MP2 Due Friday Feb 12 at 11:55p**
+    + **Quiz 2 Due Friday Feb 12 at 11:55p**
 
   </div>
 </div>
