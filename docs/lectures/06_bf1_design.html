@@ -802,12 +802,10 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Reading Free-Write (5 minutes)</h3>
+<h3>Reading contemplation question</h3>
 <div class="slideContent" >
 <ol>
-<li>Explain the design prinicipal of randomization. How does randomization convert 
- variability due to differences in the experimental material into chance-like error?</li>
-<li>If you have time, write any questions you have from the reading and/or ideas that are still unclear.</li>
+<li>What is the critical F-value used for in ANOVA? (What is the p-value for an F statistic?) </li>
 </ol>
 
 </div>
@@ -817,13 +815,18 @@ hljs.initHighlightingOnLoad();
 <h3>Announcements</h3>
 <div class="slideContent" >
 <ul>
-<li>Project proposal due on Friday 2/22 at 11:55p on Moodle</li>
-<li>HW #4: <strong>RE CH 3</strong>: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17-18 
+<li>HW3 grades posted
 
 <ul>
-<li>due on Feb 21 at Midnight </li>
-<li>envelope outside of my door<br/></li>
+<li>Problem 13</li>
 </ul></li>
+<li>HW4 now due tonight at 11:55pm 
+
+<ul>
+<li>List the four letters</li>
+</ul></li>
+<li>HW5 due on Thursday at 11:55p</li>
+<li>HW6 postponed! </li>
 </ul>
 
 </div>
@@ -833,8 +836,11 @@ hljs.initHighlightingOnLoad();
 <h3>Agenda</h3>
 <div class="slideContent" >
 <ul>
-<li>Levels of measurement</li>
-<li>Warm-up and Group time</li>
+<li>MP1 Data Collection!!
+
+<ul>
+<li>Jterm psychology courses might help us out&hellip;</li>
+</ul></li>
 <li>ANOVA for the BF[1] Design<br/></li>
 </ul>
 
@@ -842,43 +848,23 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>What&#x27;s Your Response?</h3>
+<h3>**Before** Data Collection</h3>
 <div class="slideContent" >
-<p>Categorical</p>
-
-<ul>
-<li><strong>nominal:</strong> categorical variable whose levels have no ordering.
-
-<ul>
-<li>gender, race, etc.</li>
-</ul></li>
-<li><strong>ordinal:</strong> categorical variable whose levels have an order. 
-
-<ul>
-<li>education level</li>
-</ul></li>
-</ul>
+<ol>
+<li>Make sure all changes have been published.</li>
+<li>Delete all fake responses.</li>
+<li>Zero out counts of all conditions (in survey flow).</li>
+</ol>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>What&#x27;s Your Response?</h3>
+<h3>Data Collection!!</h3>
 <div class="slideContent" >
-<p>Numerical</p>
-
 <ul>
-<li><strong>interval:</strong> numerical variable where we assume the distance between points is equal. No true zero.
-
-<ul>
-<li>scores on a “self-esteem” scale, measured from 1 to 7 </li>
-</ul></li>
-<li><strong>ratio:</strong> numerical variable that has a true zero point. 
-
-<ul>
-<li>students’ times to complete cognitive task</li>
-<li>enzyme concentration</li>
-</ul></li>
+<li>Please respond to at least 5 experiments that are for someone <em>NOT</em> in your breakout room.</li>
+<li>I&#39;ll give you about 10-15 minutes.</li>
 </ul>
 
 </div>
@@ -887,7 +873,7 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Warm up - Barley Sprouting</h3>
 <div class="slideContent" >
-<p><strong>DISCUSS IN YOUR PROJECT GROUPS</strong></p>
+<p><strong>DISCUSS IN YOUR GROUPS</strong></p>
 
 <p>Barley seeds are divided into 30 lots of 100 seeds each. The 30 lots are then divided at random into ten different groups of three lots each, with each group receiving a different treatment combination. The amount of water given per day is varied (4 ml or 8 ml). Also, the number of seeds sprouted is measured at different lengths of time randomly assigned to the groups. Thus, the researchers can understand the effect of the age of the seeds (1 week, 3 weeks, 6 weeks, 9 weeks, and 12 weeks), as well as water, on growth. </p>
 
@@ -895,9 +881,43 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Group time</h3>
+<h3>Sum of Squares (SS)</h3>
 <div class="slideContent" >
-<p><a href="http://www.science.smith.edu/%7Ergarcia/sds290-S18/project.html">Project instructions</a></p>
+<p>ANOVA measures variability in treatment effects with the sum of squares (SS) divided by the number of units of unique information (df). For the BF[1] design,</p>
+
+<p>\[ {SS}_{Treatments} = n\sum_{i=1}^{a}(\bar{y}_{i.}-\bar{y}_{..})^{2} \]</p>
+
+<p>\[ {SS}_{E} = \sum_{i=1}^{a}\sum_{j=1}^{n}({y}_{ij}-\bar{y}_{i.})^{2} \]</p>
+
+<p>\[ {SS}_{Total} = {SS}_{Treatments} + {SS}_{E} \]</p>
+
+<p>where \( n \) is the group size, and \( a \) is the number of treatments.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Degrees of Freedom (df)</h3>
+<div class="slideContent" >
+<p>The df for a table equals the number of free numbers, the number of slots in the table you can fill in before the pattern of repetitions and adding to zero tell you what the remaining numbers have to be. </p>
+
+<p>\[ {df}_{Treatments}=a-1 \]</p>
+
+<p>\[ {df}_{E}=N-a \]</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Mean Squares (MS)</h3>
+<div class="slideContent" >
+<p>The ultimate statistic we want to calculate is Variability in treatment effects/Variability in residuals.</p>
+
+<p><strong>Variability in treatment effects</strong>:
+\[ {MS}_{Treatments}=\frac{{SS}_{Treatments}}{{df}_{Treatments}} \]</p>
+
+<p><strong>Variability in residuals</strong>
+\[ {MS}_{E}=\frac{{SS}_{E}}{{df}_{E}} \]</p>
 
 </div>
 
@@ -905,8 +925,7 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>F-ratios and the F-distribution</h3>
 <div class="slideContent" >
-<p>Our test statistics in ANOVA is called the F ratio. It&#39;s our evidence again the null hypothesis 
-that there are no treatment effects. </p>
+<p>The ratio of these two MS&#39;s is called the F ratio. The following quantity is our test statistic for the null hypothesis that there are no treatment effects.</p>
 
 <p>\[ F = \frac{{MS}_{Treatments}}{{MS}_{E}} \]</p>
 
@@ -919,16 +938,26 @@ that there are no treatment effects. </p>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>F-Test and the null hypothesis</h3>
+<h3>Inference Testing in ANOVA</h3>
 <div class="slideContent" >
-<p>\[ {H}_{0}:{\alpha}_{1}={\alpha}_{2}={\alpha}_{3}={\alpha}_{4} \]</p>
+<p>\( {H}_{0}:\tau_1=\tau_2=\tau_3=\tau_4 \)</p>
 
-<p>where \( {\alpha}_{i} \) is the treatment efect for the $i$th condition.</p>
+<p>We can find the p-value for our F calculation with the following code</p>
 
-<p>We can find the p-value for our F calculation (test statistic) with the following code</p>
-
-<pre><code class="r">pf(17.68, 3, 4, lower.tail = FALSE)
+<pre><code class="r">pf(17.67, 3, 4, lower.tail = FALSE)
 </code></pre>
+
+<!-- DO FULL ANOVA TABLE ON BOARD FOR LEAFHOPPERS -->
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>ANOVA in R</h3>
+<div class="slideContent" >
+<ul>
+<li>Analyzing the leafhopper data in R. <a href="https://randilgarcia.github.io/sds290interterm21/lectures/05_formal_anova.Rmd">code here</a></li>
+</ul>
 
 </div>
 
@@ -960,50 +989,53 @@ for all outside factors. </li>
 
 <p>\[ Effect = Average - Partial Fit \]</p>
 
-</div>
+<!-- Inside-outside Factors -->
 
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Inside-outside Factors</h3>
-<div class="slideContent" >
-<table><thead>
-<tr>
-<th align="right">student</th>
-<th align="left">animal</th>
-<th align="right">cute</th>
-<th align="right">scary</th>
-</tr>
-</thead><tbody>
-<tr>
-<td align="right">8</td>
-<td align="left">cat</td>
-<td align="right">4</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td align="right">10</td>
-<td align="left">cat</td>
-<td align="right">5</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td align="right">4</td>
-<td align="left">dog</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td align="right">6</td>
-<td align="left">dog</td>
-<td align="right">3</td>
-<td align="right">2</td>
-</tr>
-</tbody></table>
+<!-- ======================================================= -->
 
-<ul>
-<li>Draw the factor diagram as a hierarchy of inside and outside factors. </li>
-<li>Use this rule to calculate effects for this example we we did for the leafhoppers.</li>
-</ul>
+<!-- ```{r animals-example, echo = FALSE, warning=FALSE, message=FALSE} -->
+
+<!-- library(dplyr) -->
+
+<!-- library(tidyr) -->
+
+<!-- library(knitr) -->
+
+<!-- animals <- read.csv("/Users/rgarcia/Dropbox/Smith-Teaching/SDS-290/Spring2018/www/animal_data.csv", header = TRUE) -->
+
+<!-- animals <- animals %>% &ndash;>
+
+<!--   mutate(student = seq.int(1, nrow(animals))) %>% &ndash;>
+
+<!--   select(student, order, animal, cute_calm, scary_calm, cute_happy, scary_happy,  -->
+
+<!--          cute_nerv, scary_nerv, cute_scared, scary_scared) %>% &ndash;>
+
+<!--   gather(var, value, cute_calm:scary_scared) %>% &ndash;>
+
+<!--   separate(var, c("cue", "emotion"), sep = "_") %>% &ndash;>
+
+<!--   spread(emotion, value) %>% &ndash;>
+
+<!--   unite(cell, cue, animal, remove = FALSE) %>% &ndash;>
+
+<!--   select(student, animal, cue, calm) %>% &ndash;>
+
+<!--   group_by(animal) %>% &ndash;>
+
+<!--   slice(5:8) %>% &ndash;>
+
+<!--   spread(cue, calm) %>% &ndash;>
+
+<!--   arrange(animal) -->
+
+<!-- kable(animals) -->
+
+<!-- ``` -->
+
+<!-- - Draw the factor diagram as a hierarchy of inside and outside factors.  -->
+
+<!-- - Use this rule to calculate effects for this example we we did for the leafhoppers. -->
 
 </div>
 

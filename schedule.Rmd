@@ -88,7 +88,7 @@ Please read the specified sections *before* class that day.
 ***
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Mon, Jan 18
 + **NO CLASS - MLK day**
 + [Office hours still on: 3-5p](https://randigarcia.youcanbook.me/)
@@ -113,7 +113,7 @@ Please read the specified sections *before* class that day.
 + Evening session: 
     + **MP1** 
 + Homework due today:
-    + Read Ch 6.1-6.2
+    + Read Ch 6.1-6.2 (*see pg 115 for more details about the biases present in Morton's skull study)
   </div>
   
   <div class="col-md-3">
@@ -143,7 +143,6 @@ Please read the specified sections *before* class that day.
 + Blocking and the CB[1] design (cont.)
 + Homework due today:
     + Work on quiz
-    + [**HW #6 due today at 9:20a**](labs/homework5.html)
   </div>
   
   <div class="col-md-3">
@@ -179,7 +178,7 @@ Please read the specified sections *before* class that day.
 + Scatterplots for data sets with blocks
 + Homework due today:
     + Read Ch 7.5 
-    + [**HW #7 due today at 9:20a**](homework.html)
+    + [**HW #6 due today at 9:20a**](homework.html)
   </div>
   
   <div class="col-md-3">
@@ -196,7 +195,7 @@ Please read the specified sections *before* class that day.
 + **Quiz 2 HANDED OUT**
 + Homework due today:
     + Read Ch. 9.3
-    + **HW #8 due thurs at 11:55p**
+    + **HW #7 due thurs at 11:55p**
   </div>
 </div>
 
@@ -215,7 +214,7 @@ Please read the specified sections *before* class that day.
 + Visualizing 3-factor interactions
 + Homework due today:
     + Read Ch 9.5
-    + [**HW #9 due today at 9:20a**](labs/homework9.html)
+    + [**HW #8 due today at 9:20a**](labs/homework9.html)
   </div>
   
   <div class="col-md-3">
