@@ -102,8 +102,8 @@ Please read the specified sections *before* class that day.
 + Analysis of the BF[1] Design in R
 + Homework due today:
     + Read Ch 5.3-5.4
-    + **Mini Project 1 due Monday morning** (upload to Moodle by Midnight)
-    + [**HW #4 due today at 9:20a**](labs/homework4_21.html)
+    + **Mini Project 1 due Tuesday morning** (upload to Moodle by Midnight)
+    + [**HW #4 due todnight at 11:55p**](labs/homework4_21.html)
   </div>
   
   <div class="col-md-3">
@@ -134,7 +134,6 @@ Please read the specified sections *before* class that day.
 + Blocking and the CB[1] design 
 + Evening session: Optional office hours
 + Homework due today:
-    + **MP1 due this morning at 9:20a**
     + Read Ch 7.1
   </div>
   
@@ -142,6 +141,7 @@ Please read the specified sections *before* class that day.
 #### Tue, Jan 26
 + Blocking and the CB[1] design (cont.)
 + Homework due today:
+    + **MP1 due this morning at 9:20a**
     + Work on quiz
   </div>
   
