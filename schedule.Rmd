@@ -96,7 +96,7 @@ Please read the specified sections *before* class that day.
   + Submit a Word doc of your survey for pre-approval **by Mon Jan 18, 9:20a**
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Tue, Jan 19
 + MP1 Data Collection
 + Analysis of the BF[1] Design in R
