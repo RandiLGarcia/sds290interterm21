@@ -1,7 +1,6 @@
 ---
-title: "07 - BF[1] in R"
+title: "BF[1] in R"
 author: "Randi L. Garcia"
-date: "February 25, 2019"
 output: html_document
 ---
 

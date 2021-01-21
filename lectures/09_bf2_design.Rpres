@@ -1,14 +1,14 @@
-Two-Way Basic Factorial Design
+Two-Way Basic Factorial Design II
 ========================================================
 author: Prof Randi Garcia
-date: February 27, 2019
+date: January 21, 2021
 autosize: true
 transition: linear
 transition-speed: default
 font-family: 'Helvetica'
 
 
-Reading Free-Write (5 minutes)
+Reading contemplation question
 ========================================================
 
 ![](09_bf2_design-figure/free-write.png)
@@ -20,22 +20,41 @@ Reading Free-Write (5 minutes)
 Announcements
 ========================================================
 
-- HW5: Using software; Due 2/28 at 5p 
-    - Submit HTML file on Moodle
-- Exam 1 passed out on Monday
-- Dr. Emma Benn talk on Tuesday, Mar 5, at 5:00p in Seelye 106
-    - Post comment on Slack channel #emmabenn
-- Project next steps
-    - Full class work time on Wed Mar 6
-    - Updated project proposal due Friday Mar 8
+- HW4 grades posted
+- HW5 due tonight at 11:55p
+  - Please print or type your answers.
+- MP1 due on Tues 1/26 9:20a
+   - Definitely let me know if you're having issues!
+- Sign up for office hours [here](https://randigarcia.youcanbook.me/)
  
 Agenda
 ========================================================
 
-- HW5 3b
-- ANOVA table for the BF[1] Design
-- The BF[2] design
+- Note on HW5 3b
+- Practice identifying designs
+- The BF[2] design continued
 
+Homework 5 number 3b
+=======================================================
+
+![](09_bf2_design-figure/hw5_3b.png)
+
+Paper Helicopters
+=======================================================
+
+[Google slides](https://docs.google.com/presentation/d/1Apps6RdVMtETKgAGXQKrXiPOMKrPLfwziNFDW-EN4Xc/edit?usp=sharing)
+
+[Paper helicopters](https://williamghunter.net/images/teaching-engineers-experimental-design-with-a-paper-helicopter/teaching-engineers-experimental-design-with-a-paper-helicopter-image1.png) can be cut from one half of an 8.5 by 11 sheet of paper. We can conduct an experiment by dropping helicopters from a fixed height and clocking the time it takes to drop. We can vary wing length: 4.25 in, 4.0 in, 3.75 in, and 3.5 in, as well as body width: 3.25 in, 3.75 in, 4.0 in, and 4.25 in. We'll make 32 planes and randomly assign them to the 16 combinations. 
+
+Addled Goose Eggs
+=======================================================
+
+The Canadian goose is a magnificent bird, but it can be a nuisance in urban areas in large numbers. One method of population control is to addle eggs in nests, but this method can hurt adult females because they continue sitting for too long. Would removal of the eggs at the usual hatch date prevent harm? It is suspected that females nesting together at different sites are similar to each other. We randomly select 5 different sites, and we then randomly assign 5 nests per site to the *addle with no removal condition*, and 5 nests per site to the *addle plus removal condition*. The females at the nests are banded such that survival age can be measured later. 
+
+Parks and Recreation
+=======================================================
+
+Deputy director of the Pawnee Parks and Rec department, Leslie Knope, needs to know how resistant different vegetative types are to trampling so that the number of visitors can be controlled in sensitive areas. Twenty lanes of a park are established, each .5 m wide and 1.5 m long. These twenty lanes are randomly assigned to five treatments: 0, 25, 75, 200, or 500 walking passes. Each pass consists of a 70-kg individual wearing boots, walking in a natural gait. One year after trampling, the average height of the vegetation along the lanes are measured. 
 
 Design Name Disambiguation
 =======================================================
@@ -47,43 +66,6 @@ Basic Factorial, One-Way (BF[1])
     - **Randomized Basic Factorial** (RBF[1]) Design
 - If the factor is experimental OR observational 
     - **Basic Factorial** (BF[1]) Design
-
-Warm-up!!
-=======================================================
-
-1. What is the response variable? What's it's level of measurement? 
-2. What are the experimental units?
-3. How many structural factors are there? What might you call them?
-4. How many levels does each factor have? What are they?
-5. How are the factors related? (i.e., crossing, blocking)
-6. What's the name of this design?
-
-Teaching Methods
-=======================================================
-
-A professor wanted to compare three different teaching methods to determine how students 
-would perceive the course: 1) instructionist, 2) inquiry-based, and 3) team-based. She randomly assigned the same class (same topic different students) from 6 different semesters to treatments. At the end of the semester students were asked to rate the course on a 5-point scale, and the average class rating was calculated. 
-
-Anxiety and Memory
-=======================================================
-
-A psychologist wants to study the effect of anxiety on 4 different types of memory. Twelve participants are assigned to one of two anxiety conditions: 1) low anxiety group is told that they will be awarded \$5 for participation and \$10 if they remember sufficiently accurately, and 2) high anxiety group is told they will be awarded \$5 for participation and \$100 if they remember sufficiently accurately. All subjects perform four memory trials in random order, testing 4 different types of memory. The number of errors on each trial is recorded. 
-
-Addled Goose Eggs
-=======================================================
-
-The Canadian goose is a magnificent bird, but it can be a nuisance in urban areas in large numbers. One method of population control is to addle eggs in nests, but this method can hurt adult females because they continue sitting for too long. Would removal of the eggs at the usual hatch date prevent harm? It is suspected that females nesting together at different sites are similar to each other. We randomly select 5 different sites, and we then randomly assign 5 nests per site to the *addle with no removal condition*, and 5 nests per site to the *addle plus removal condition*. The females at the nests are banded such that survival age can be measured later. 
-
-Paper Helicopters
-=======================================================
-
-[Paper helicopters](https://williamghunter.net/images/teaching-engineers-experimental-design-with-a-paper-helicopter/teaching-engineers-experimental-design-with-a-paper-helicopter-image1.png) can be cut from one half of an 8.5 by 11 sheet of paper. We can conduct an experiment by dropping helicopters from a fixed height and clocking the time it takes to drop. We can vary wing length: 4.25 in, 4.0 in, 3.75 in, and 3.5 in, as well as body width: 3.25 in, 3.75 in, 4.0 in, and 4.25 in. We'll make 32 planes and randomly assign them to the 16 combinations. 
-
-Parks and Recreation
-=======================================================
-
-Deputy director of the Pawnee Parks and Rec department, Leslie Knope, needs to know how resistant different vegetative types are to trampling so that the number of visitors can be controlled in sensitive areas. Twenty lanes of a park are established, each .5 m wide and 1.5 m long. These twenty lanes are randomly assigned to five treatments: 0, 25, 75, 200, or 500 walking passes. Each pass consists of a 70-kg individual wearing boots, walking in a natural gait. One year after trampling, the average height of the vegetation along the lanes are measured. 
-
 
 ANOVA Source Table for BF[1]
 =======================================================
@@ -99,44 +81,28 @@ $${H}_{0}:{\alpha}_{1}={\alpha}_{2}=...={\alpha}_{a}$$
 | Treatment | $n\sum_{i=1}^{a}(\bar{y}_{i.}-\bar{y}_{..})^{2}$ | $a-1$ | $\frac{{SS}_{Treatments}}{{df}_{Treatments}}$ | $\frac{{MS}_{Treatments}}{{MS}_{E}}$ |
 | Error | $\sum_{i=1}^{a}\sum_{j=1}^{n}({y}_{ij}-\bar{y}_{i.})^{2}$ | $N-a$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
 
-F-ratios and the F-distribution
-=======================================================
-Our test statistics in ANOVA is called the F ratio. It's our evidence again the null hypothesis 
-that there are no treatment effects. 
 
-$$F = \frac{{MS}_{Treatments}}{{MS}_{E}}$$
-
-If the null hypothesis is true, then F is a random variable $\sim F({df}_{Treatments}, {df}_{E})$. The [F-distribution](https://en.wikipedia.org/wiki/F-distribution).
-
-F-ratios and the F-distribution
+Critical-F and p-values for F-ratios
 =======================================================
 
 ```{r}
-library(ggplot2)
-qplot(x = rf(5000, 4, 15), geom = "density")
+#Critical F for leafhoppers
+qf(.95, 3, 4)
 ```
 
-F-Test and the null hypothesis
-=======================================================
-
-$${H}_{0}:{\alpha}_{1}={\alpha}_{2}={\alpha}_{3}={\alpha}_{4}={\alpha}_{5}$$
-
-where ${\alpha}_{i}$ is the treatment effect for the $i$-th condition.
-
-We can find the p-value for our F calculation (test statistic) with the following code
-
-```{r, eval=FALSE}
-pf(29.484, 4, 15, lower.tail = FALSE)
+```{r}
+#p-value for diet factor F-statistic
+pf(17.67, 3, 4, lower.tail = FALSE)
 ```
 
-Inside-outside Factors
+BF[2] Inside-outside Factors and effect formulas
 =======================================================
 
 ![](09_bf2_design-figure/piglets.png)
 
-- Draw the factor diagram vertically and label all inside and outside factors with arrows. Include the universal factors (benchmark and residuals). 
+- Draw the factor diagram vertically and label all inside and outside factors with arrows. Include the universal factors (benchmark and residuals).
 
-Mathematical notation
+BF[2] Design Formulas
 =======================================================
 
 $${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk}$$
@@ -202,7 +168,135 @@ $${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk}$$
 | Interaction AB | $n\sum_{i=1}^{a}\sum_{j=1}^{b}(\bar{y}_{ij.}-\bar{y}_{i..}-\bar{y}_{.j.}+\bar{y}_{…})^{2}$ | $(a-1)(b-1)$ | $\frac{{SS}_{AB}}{{df}_{AB}}$ | $\frac{{MS}_{AB}}{{MS}_{E}}$ |
 | Error | $\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{k=1}^{n}({y}_{ijk}-\bar{y}_{ij.})^{2}$ | $ab(n-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
 
+Interaction Graphs
+=======================================================
+
+For each of the following interaction graphs, answer the following questions with **YES** or **NO**.
+
+1. Is there a main effect of B12?
+2. Is there a main effect of antibiotics?
+3. Is there an interaction between B12 and antibiotics?
+
+Practice 3
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               5, 5, 5,
+                               6, 6, 6,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+Practice 3
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               5, 5, 5,
+                               6, 6, 6,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+***
+
+1. YES
+2. YES
+3. NO
+
+Practice 4
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               7, 7, 7,
+                               4, 4, 4,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+Practice 4
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               7, 7, 7,
+                               4, 4, 4,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+***
+
+1. NO
+2. YES
+3. NO
+
 BF[2] in R
 =======================================================
 
 [See BF2 code](http://www.science.smith.edu/~rgarcia/sds290-S19/lectures/09_bf2_inR.Rmd)
+
+Teaching Methods
+=======================================================
+
+A professor wanted to compare three different teaching methods to determine how students 
+would perceive the course: 1) instructionist, 2) inquiry-based, and 3) team-based. She randomly assigned the same class (same topic different students) from 6 different semesters to treatments. At the end of the semester students were asked to rate the course on a 5-point scale, and the average class rating was calculated. 
+
+Anxiety and Memory
+=======================================================
+
+A psychologist wants to study the effect of anxiety on 4 different types of memory. Twelve participants are assigned to one of two anxiety conditions: 1) low anxiety group is told that they will be awarded \$5 for participation and \$10 if they remember sufficiently accurately, and 2) high anxiety group is told they will be awarded \$5 for participation and \$100 if they remember sufficiently accurately. All subjects perform four memory trials in random order, testing 4 different types of memory. The number of errors on each trial is recorded. 

@@ -92,7 +92,7 @@ ggplot(piglets, aes(x = interaction(B12, antibiotic), y = new_gain)) +
 Run two-way ANOVA without the interaction term.
 
 ```{r}
-mod1 <- aov(new_gain ~ antibiotic + B12, data = piglets)
+mod1 <- lm(new_gain ~ antibiotic + B12, data = piglets)
 
 anova(mod1)
 ```
@@ -114,7 +114,7 @@ ggplot(piglets, aes(x = B12, y = new_gain,
 Conduct a two-way ANOVA
 
 ```{r}
-mod2 <- aov(new_gain ~ antibiotic * B12, data = piglets)
+mod2 <- lm(new_gain ~ antibiotic * B12, data = piglets)
 
 anova(mod2)
 ```
