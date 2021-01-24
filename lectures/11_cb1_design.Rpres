@@ -1,14 +1,14 @@
 Complete Block Design
 ========================================================
 author: Prof Randi Garcia
-date: March 20, 2019
+date: January 25, 2021
 autosize: true
 transition: linear
 transition-speed: default
 font-family: 'Helvetica'
 
 
-Reading Free-Write (5 minutes)
+Reading contemplation question
 ========================================================
 
   1. What are the three ways to create blocks in a design? Give an example of each.
@@ -17,19 +17,20 @@ Reading Free-Write (5 minutes)
 Announcements
 ========================================================
 
-- HW #6 due on Thursday 11:55pm on Moodle
-    - CITI training on Research Ethics
-- Projects
-    - Final approval due on Mar 25
-- Gina DelCorazon lunchtime talk (free food!)
-    - Friday, March 22nd, 12:10p in McConnell B15
-- SDS Presentation of the major (free food!)
-    - Tuesday, March 26th, 12:15p in Ford Atrium
+- HW5 grades posted
+- Mini project 1 technical report due tomorrow morning
+- Quiz 1 due on Thursday 11:55p
+
+Notes on Mini Project 1 Technical Reports
+========================================================
+
+- See instructions for report format
+- No need to include effect sizes and CIs
 
 Agenda
 ========================================================
 
-- The BF[2] design in R
+- Finish up BF[2] design
 - Blocking principal
 
 
@@ -45,10 +46,127 @@ $${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk}$$
 | Interaction AB | $n\sum_{i=1}^{a}\sum_{j=1}^{b}(\bar{y}_{ij.}-\bar{y}_{i..}-\bar{y}_{.j.}+\bar{y}_{…})^{2}$ | $(a-1)(b-1)$ | $\frac{{SS}_{AB}}{{df}_{AB}}$ | $\frac{{MS}_{AB}}{{MS}_{E}}$ |
 | Error | $\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{k=1}^{n}({y}_{ijk}-\bar{y}_{ij.})^{2}$ | $ab(n-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
 
+Interaction Graphs
+=======================================================
+
+For each of the following interaction graphs, answer the following questions with **YES** or **NO**.
+
+1. Is there a main effect of B12?
+2. Is there a main effect of antibiotics?
+3. Is there an interaction between B12 and antibiotics?
+
+Practice 3
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               5, 5, 5,
+                               6, 6, 6,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+Practice 3
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               5, 5, 5,
+                               6, 6, 6,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+***
+
+1. YES
+2. YES
+3. NO
+
+Practice 4
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               7, 7, 7,
+                               4, 4, 4,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+Practice 4
+=======================================================
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+piglets <- data.frame(gain = c(4, 4, 4, 
+                               7, 7, 7,
+                               4, 4, 4,
+                               7, 7, 7), 
+                      group = as.factor(c(rep(1, 3), rep(2, 3), rep(3, 3), rep(4, 3))), 
+                      antibiotic = c(rep("0mg", 3), rep("40mg", 3), rep("0mg", 3), rep("40mg", 3)),
+                      B12 = c(rep("0mg", 6), rep("5mg", 6)))
+
+ggplot(piglets, aes(x = B12, y = gain, 
+                    group = antibiotic, 
+                    linetype = antibiotic, 
+                    shape = antibiotic,
+                    color = antibiotic)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = 0) +
+  ylim(2, 9)
+```
+
+***
+
+1. NO
+2. YES
+3. NO
+
 BF[2] in R
 =======================================================
 
-[See BF2 code](http://www.science.smith.edu/~rgarcia/sds290-S18/lectures/09_bf2_inR.Rmd)
+[See BF2 code](http://www.science.smith.edu/~rgarcia/sds290-S19/lectures/09_bf2_inR.Rmd)
 
 
 Example

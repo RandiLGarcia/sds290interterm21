@@ -57,8 +57,8 @@ navbar:
 #    - text: 11 - BF[2] Design (cont.)
 #      href: lectures/10_bf2_design_cont.html   
     - text: 12 - CB[1] Design
-#      href: lectures/11_cb1_design.html         
-#    - text: 13 - CB[1] Design (cont.)
+      href: lectures/11_cb1_design.html         
+    - text: 13 - CB[1] Design (cont.)
 #      href: lectures/12_cb1_design_cont.html       
 #    - text: 14 - Latin Square Design
 #      href: lectures/13_spitplot_design.html  
@@ -120,7 +120,7 @@ navbar:
     - text: 'Mini project 1'
       href: mini-project-1.html
     - text: 'Mini Project 2'
-#      href: mini-project-2.html
+      href: mini-project-2.html
 #    - text: Advice
   - text: Book Office Hours
     href: https://randigarcia.youcanbook.me/

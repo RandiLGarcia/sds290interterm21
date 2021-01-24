@@ -106,7 +106,7 @@ Please read the specified sections *before* class that day.
     + [**HW #4 due todnight at 11:55p**](labs/homework4_21.html)
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Wed, Jan 20
 + Factorial crossing and the BF[2] design
 + Formal ANOVA of the BF[2]
@@ -116,7 +116,7 @@ Please read the specified sections *before* class that day.
     + Read Ch 6.1-6.2 (*see pg 115 for more details about the biases present in Morton's skull study)
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Thurs, Jan 21
 + Analysis of the BF[2] Design in R
 + **Quiz 1 HANDED OUT**
