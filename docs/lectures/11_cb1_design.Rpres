@@ -12,7 +12,6 @@ Reading contemplation question
 ========================================================
 
   1. What are the three ways to create blocks in a design? Give an example of each.
-  2. What questions do you have from today's reading? What do you feel fuzzy on?
 
 Announcements
 ========================================================
@@ -24,8 +23,20 @@ Announcements
 Notes on Mini Project 1 Technical Reports
 ========================================================
 
-- See instructions for report format
-- No need to include effect sizes and CIs
+- See instructions for report format [here](https://randilgarcia.github.io/sds290interterm21/mini-project-1.html)
+- In the results section I am primarily looking for ANOVA results and assumption tests. In the results and/or conclusion I am looking for statements about whether your hypotheses were supported or not.
+- Do not need to include effect sizes and CIs.
+- Getting help today
+  - Office hours today are full.
+  - Evening session will be office hours. Come with questions!
+  - Osman has drop in hours tonight.
+
+Mini Project 2
+========================================================
+
+- Read instructions for MP2 [here](https://randilgarcia.github.io/sds290interterm21/mini-project-2.html).
+- Completed in groups about about 3.
+- Complete [project group preferences survey](https://docs.google.com/forms/d/e/1FAIpQLSdcR3mvrQ8wOkvxZjNco4nEQrSH_iTJdy3_ew3x4WRsFCw9Yg/viewform?usp=sf_link) NOW.
 
 Agenda
 ========================================================
@@ -162,6 +173,7 @@ ggplot(piglets, aes(x = B12, y = gain,
 1. NO
 2. YES
 3. NO
+
 
 BF[2] in R
 =======================================================
