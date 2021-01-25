@@ -193,9 +193,9 @@ View(leaf)
 
 ***
 
-## Homework 5 Problems
+## Homework 6 Problems
 
-For homework 5, complete the following exercises. When you are done, please knit your 
+For homework 6, complete the following exercises. When you are done, please knit your 
 homework to an HTML file and submit the HTML file on Moodle.
 
 Refer to the walking babies example on page 150 of your textbook for exercises 1-3. For exercises 1-3, you will be conducting an analysis to test if there are differences in age in months when babies first walked depending on the group they were assigned to. 
