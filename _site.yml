@@ -106,8 +106,8 @@ navbar:
       href: labs/homework4_W21.html
     - text: 'HW5: RE CH 3: 3-4 (data in fig 3.21 on pg. 102), 12, 13, 17'
       href: homework.html
-#    - text: 'HW6: Using software; Due 2/28 at 11:55p'
-#      href: labs/homework5.html
+    - text: 'HW6: Using software; Due 2/02 at 9:20a'
+      href: labs/homework6_W21.html
 #    - text: 'HW7: RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9'
 #      href: homework.html  
 #    - text: 'HW8: Using software - BF[2], Compound factors'
