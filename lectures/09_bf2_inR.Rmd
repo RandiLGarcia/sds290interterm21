@@ -54,6 +54,9 @@ Create a parallel dot plot for piglets data
 ```{r}
 ggplot(piglets, aes(x = B12, y = gain, shape = antibiotic, color = antibiotic)) +
   geom_point(size = 2.5)
+
+ggplot(piglets, aes(x = B12, y = gain, fill = antibiotic)) +
+  geom_boxplot()
 ```
 
 #Check for Equal Variances
@@ -82,6 +85,11 @@ ggplot(piglets, aes(x = interaction(B12, antibiotic), y = lgain)) +
 
 ```{r}
 favstats(new_gain ~ antibiotic|B12, data = piglets)[,c(1,7:8)]
+
+piglets %>%
+  group_by(antibiotic, B12) %>%
+  summarize(mean = mean(new_gain),
+            sd = sd(new_gain))
 
 ggplot(piglets, aes(x = interaction(B12, antibiotic), y = new_gain)) + 
   geom_boxplot()

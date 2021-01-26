@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Complete Block Design</title>
+  <title>Complete Block Design II</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -794,7 +794,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>Complete Block Design</h1><p>Prof Randi Garcia<br/>March 25, 2019</p>
+<h1>Complete Block Design II</h1><p>Prof Randi Garcia<br/>January 26, 2021</p>
 
 <div class="slideContent" >
 
@@ -802,13 +802,11 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Reading Free-Write (5 minutes)</h3>
+<h3>Reading contemplation question</h3>
 <div class="slideContent" >
 <ol>
-<li>In Kelly&#39;s hamster experiment, which factor is nested in which other factor? Which 
+<li>In Kelly&#39;s hamster experiment, which factor is <em>nested</em> in which other factor? Which 
  two factors are crossed?</li>
-<li>Sketch what the data in Figure 7.7 (on pg. 254 and on board) might look like in a 
- data frame that is ready for analysis?</li>
 </ol>
 
 </div>
@@ -818,18 +816,9 @@ hljs.initHighlightingOnLoad();
 <h3>Announcements</h3>
 <div class="slideContent" >
 <ul>
-<li>No homework this week</li>
-<li>Projects!!
-
-<ul>
-<li>Final approval due date moved to <strong>Mar 28</strong></li>
-</ul></li>
-<li>SDS Presentation of the major tomorrow (free food from Teapot!)
-
-<ul>
-<li>Tuesday, March 26th, 12:15p in Ford Atrium<br/></li>
-</ul></li>
-<li>DataFest starts on Friday night!!!<br/></li>
+<li>Mini project 1 technical report due now</li>
+<li>HW6 assigned, due on Tuesday</li>
+<li>Quiz 1 due on Thursday 11:55p<br/></li>
 </ul>
 
 </div>
@@ -839,100 +828,34 @@ hljs.initHighlightingOnLoad();
 <h3>Agenda</h3>
 <div class="slideContent" >
 <ul>
-<li>Exam 1 feedback</li>
-<li>Mid-Semester Assessment feedback</li>
-<li>Blocking and the Complete Block Design (cont.)</li>
-<li>Project time?</li>
+<li>Degrees of freedom in BF[2] design</li>
+<li>Blocking principal </li>
+<li>The Complete Block Design</li>
 </ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Exam 1</h3>
-<div class="mediaInline slideContent" >
-<ul>
-<li>Great job!</li>
-<li>Median = 92, Mean = 91.06, sd = 6.65</li>
-</ul>
-
-<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-1"/></p>
-
-<pre><code> min Q1 median Q3 max     mean       sd  n missing
-  75 87     92 97 100 91.05714 6.646285 35       0
-</code></pre>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>How&#x27;s it going?</h3>
+<h3>Degrees of freedom in BF[2] design</h3>
 <div class="slideContent" >
-<ul>
-<li>&ldquo; I appreciate the structure of the course, mainly having a hands on project to learn the material.&rdquo;</li>
-<li>&ldquo;I&#39;m learning things in a more conceptual, less statistics-y way than I have before, which is really aiding my understanding of how randomness/significance/other concepts we take for granted in stats actually play into the development of good studies.&rdquo;</li>
-<li>&ldquo;It&#39;s fine. I feel like there&#39;s a disconnect in that I think I understand everything but then I&#39;ll do the homework or take my exam and it feels like I don&#39;t.&rdquo;</li>
-</ul>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>What&#x27;s going well?</h3>
+<h3>MP2 Groups</h3>
 <div class="slideContent" >
-<ul>
-<li>&ldquo;I appreciate having to do homework in R.&rdquo;</li>
-<li>&ldquo;I actually really like the reading quizzes, in that they definitely force me to get acquainted with the material before class. I think it has helped me to ask better, more informed questions during class itself.&rdquo;</li>
-<li>&ldquo;Working cooperatively with another department/org on campus is also a big change from anything I’ve done before, and I think it will prepare me well for the capstone next year, as well as my internship this summer.&rdquo;</li>
-</ul>
+<ol>
+<li>What needs to happen next for your study and when/who will do it?</li>
+<li>When will you actually start collecting data?</li>
+</ol>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Not so well?</h3>
-<div class="slideContent" >
-<ul>
-<li>&ldquo;I would like to see more explicit corrections on the homework; a solution set would be particularly helpful once homework is passed back or other comments.&rdquo;</li>
-<li>&ldquo;I don&#39;t really like R. I have a little bit of a mental block related to it. I&#39;m trying to get over it though.&rdquo;</li>
-<li>&ldquo;I would like for next week&#39;s homework to be readily available before the current week&#39;s homework set is due.&rdquo;</li>
-<li>&ldquo;The book is not going so well, It causes me to be more confused about designs etc. and essentially more confused in class when they are being explained.&rdquo;</li>
-<li>&ldquo;I think that the textbook would benefit from revision so it is easier to navigate and read, and so things are taught in a more orderly fashion.&rdquo;</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Things you can do</h3>
-<div class="slideContent" >
-<ul>
-<li>&ldquo;Keep asking questions when I am unsure, and find study buddies for homeworks.&rdquo;</li>
-<li>&ldquo;go to tutor hours&rdquo;</li>
-<li>&ldquo;Immediately go to office hours when I&#39;m confused.&rdquo;</li>
-<li>&ldquo;Asking more questions, and participating more.&rdquo;</li>
-<li>&ldquo;I could spend some more time playing with R&rdquo;</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Things I will do</h3>
-<div class="slideContent" >
-<ul>
-<li>Post solutions sets for homework.</li>
-<li>Post the following week&#39;s assignment earlier. </li>
-<li>Post slide after the RFW with answer!</li>
-<li>Peer evaluation at the end of the projects.</li>
-<li>Homework due Fridays at noon??</li>
-</ul>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>CB[1] Example</h3>
+<h3>Example</h3>
 <div class="slideContent" >
 <p>Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. Three branches are randomly selected from each tree, and 3 cm by 3 cm patches are marked on each branch. The number of mealybugs on the patch is counted. The three treatments then get randomly assigned to the three branches for each tree. After three days the mealybugs are counted again. The change in number of mealybugs is computed (\( before-after \)).</p>
 
@@ -940,25 +863,41 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>CB[2] Example</h3>
+<h3>Example - Basic Factorial Design</h3>
 <div class="slideContent" >
-<p>Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). Baby rats were separated into five groups of 40 to form groups of approximately the same weight. The 40 rats in each group were randomly assigned to each of the 40 conditions. Body weight and food consumption were measured twice weekly, and the average daily weight gain over 21 days was recorded.</p>
+<p>Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. The number of mealybugs on each tree is counted. The three treatments then get randomly assigned to the three trees each. After three days the mealybugs are counted again. The change in number of mealybugs is computed (\( before-after \)).</p>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>CB[1] Example</h3>
+<h3>Example</h3>
 <div class="slideContent" >
-<p>This experiment is interested in the blood concentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.   </p>
+<p>Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). Baby rats were separated into five groups of 40 to form groups of approximately the same weight. The 40 rats in each group were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.</p>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>BF[1] Example</h3>
+<h3>Example - Basic Factorial Design [2]</h3>
 <div class="slideContent" >
-<p>This experiment is interested in the blood concentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use nine subjects, and randomly assign subjects to one of the three delivery methods. The area under the time-concentration curve is recorded for each subject after being given the drug.</p>
+<p>Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). 200 baby rats were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Example</h3>
+<div class="slideContent" >
+<p>This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.   </p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Example - Basic Factorial Design</h3>
+<div class="slideContent" >
+<p>This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use nine subjects, and randomly assign subjects to one of the three delivery methods. The area under the time-concentration curve is recorded for each subject after beging given the drug.</p>
 
 </div>
 
@@ -985,12 +924,12 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>Albino rats</li>
 </ul></li>
-<li>Subdivide larger chunks of material into sets of smaller pieces
+<li>Subdivide larger chunks of material into sets of smaller peices
 
 <ul>
 <li>Mealybug trees</li>
 </ul></li>
-<li>Reuse subjects or chunks of material in each of several times slots
+<li>Reuse subjects or material in each of sveral times slots
 
 <ul>
 <li>Drug study</li>
@@ -1001,12 +940,12 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Complete Block Design, CB[1]</h3>
+<h3>Complete Block Desgin, CB[1]</h3>
 <div class="slideContent" >
 <ul>
-<li>Experimental units are separated into blocks of similar units</li>
-<li>Then each member of a block is assigned a random treatment</li>
-<li>Complete means that every block x treatment combination is tested</li>
+<li>Experimental material are separated into groups (or reused) to create similar units </li>
+<li>Then each unit within a block is then is assigned one level of the factor of interest</li>
+<li>&ldquo;Complete Block&rdquo; means that every block x treatment combination is tested</li>
 </ul>
 
 </div>
@@ -1015,7 +954,7 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Inappropriate Insects</h3>
 <div class="slideContent" >
-<p>Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Five infested cycads are taken to the testing area. Three branches are randomly selected from each tree, and 3 cm by 3 cm patches are marked on each branch. The number of mealybugs on the patch is counted. The three treatments then get randomly assigned to the three branches for each tree. After three days the mealybugs are counted again. The change in number of mealybugs is computed (\( before-after \)).</p>
+<p>Modern zoos try to reproduce natural habitats in their exhibits as much as possible. They try to use appropriate plants, but these plants can be infested with inappropriate insects. Cycads (plants that look vaguely like palms) can be infected with mealybugs, and the zoo wishes to test three treatments: 1) water, 2) horticultural oil, and 3) fungal spores in water. Nine infested cycads are taken to the testing area. Three branches are randomly selected from each tree, and 3 cm by 3 cm patches are marked on each branch. The number of mealybugs on the patch is counted. The three treatments then get randomly assigned to the three branches for each tree. After three days the mealybugs are counted again. The change in number of mealybugs is computed (\( before-after \)).</p>
 
 </div>
 
@@ -1067,7 +1006,7 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Formal ANOVA for CB[1]</h3>
 <div class="slideContent" >
-<p>\[ {y}_{ij}={\mu}+{\tau}_{i}+{\beta}_{j}+{e}_{ij} \]</p>
+<p>\[ {y}_{ijk}={\mu}+{\tau}_{i}+{\beta}_{j}+{e}_{ijk} \]</p>
 
 <table><thead>
 <tr>
@@ -1217,17 +1156,6 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <!--   geom_point() -->
 
 <!-- ``` -->
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Group Check-in Time</h3>
-<div class="slideContent" >
-<ol>
-<li>What needs to happen next for your study and when/who will do it?</li>
-<li>When will you actually start collecting data?</li>
-</ol>
 
 </div>
 
