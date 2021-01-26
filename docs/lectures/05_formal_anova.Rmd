@@ -86,11 +86,19 @@ leaf %>%
   t.test(days ~ diet, data = .)
 ```
 
+Or using the linear model from above
+
+```{r}
+summary(mod)
+confint(mod)
+```
+
 We probably want to adjust for multiple comparisons to control our **experimentwise type I error rate**. 
 
 ```{r}
 TukeyHSD(mod, "diet")
 ```
+
 
 
 

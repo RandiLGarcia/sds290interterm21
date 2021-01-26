@@ -837,18 +837,103 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Degrees of freedom in BF[2] design</h3>
+<h3>ANOVA Source Table for BF[2]</h3>
 <div class="slideContent" >
+<p>\[ {y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk} \]</p>
+
+<table><thead>
+<tr>
+<th align="right">Source</th>
+<th align="center">SS</th>
+<th align="center">df</th>
+<th align="center">MS</th>
+<th align="center">F</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="right">Treatment A</td>
+<td align="center">\( \sum_{i=1}^{a}bn(\bar{y}_{i..}-\bar{y}_{…})^{2} \)</td>
+<td align="center">\( a-1 \)</td>
+<td align="center">\( \frac{{SS}_{A}}{{df}_{A}} \)</td>
+<td align="center">\( \frac{{MS}_{A}}{{MS}_{E}} \)</td>
+</tr>
+<tr>
+<td align="right">Treatment B</td>
+<td align="center">\( \sum_{j=1}^{b}an(\bar{y}_{.j.}-\bar{y}_{…})^{2} \)</td>
+<td align="center">\( b-1 \)</td>
+<td align="center">\( \frac{{SS}_{B}}{{df}_{B}} \)</td>
+<td align="center">\( \frac{{MS}_{B}}{{MS}_{E}} \)</td>
+</tr>
+<tr>
+<td align="right">Interaction AB</td>
+<td align="center">\( n\sum_{i=1}^{a}\sum_{j=1}^{b}(\bar{y}_{ij.}-\bar{y}_{i..}-\bar{y}_{.j.}+\bar{y}_{…})^{2} \)</td>
+<td align="center">\( (a-1)(b-1) \)</td>
+<td align="center">\( \frac{{SS}_{AB}}{{df}_{AB}} \)</td>
+<td align="center">\( \frac{{MS}_{AB}}{{MS}_{E}} \)</td>
+</tr>
+<tr>
+<td align="right">Error</td>
+<td align="center">\( \sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{k=1}^{n}({y}_{ijk}-\bar{y}_{ij.})^{2} \)</td>
+<td align="center">\( ab(n-1) \)</td>
+<td align="center">\( \frac{{SS}_{E}}{{df}_{E}} \)</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 
 </div>
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>MP2 Groups</h3>
+<h3>ANOVA Source Table for BF[2]</h3>
+<div class="slideContent" >
+<ul>
+<li>\( i \) is the index and \( a \) is the number of levels of Factor A.</li>
+<li>\( j \) is the index and \( b \) is the number of levels of Factor B.</li>
+<li>\( k \) is the index for observations and \( n \) is the number of observations in a cell.</li>
+<li>\( {\mu} \) is the benchmark.</li>
+<li>\( {\alpha}_{i} \) is the effect of the \( ith \) condition of Factor A.</li>
+<li>\( {\beta}_{j} \) is the effect of the \( jth \) condition of Factor B.</li>
+<li>\( {\alpha\beta}_{ij} \) is the effect of the \( ijth \) condition of the AB interaction.</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Degrees of freedom counting </h3>
+<div class="slideContent" >
+<ul>
+<li>See page 174 for BF[1] and page 221 for BF[2]</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Confidence Intervals for Treatment Effects </h3>
+<div class="slideContent" >
+<p>See section 3.5 of textbook (page 80)</p>
+
+<p>\[ {\alpha}_{i} \pm \sqrt{{MS}_{res}}*leverage*t({df}_{res}) \]</p>
+
+<ul>
+<li>\( {\alpha}_{i} \) is the treatment effect estimate.</li>
+<li>\( \sqrt{{MS}_{res}}*leverage \) is the standard error of the estimate.</li>
+<li>\( t({df}_{res}) \) is the t-value the dictates distance of the interval.</li>
+</ul>
+
+<p>A look back at the <a href="https://randilgarcia.github.io/sds290interterm21/lectures/05_formal_anova.Rmd">formal ANOVA code</a></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>MP2 Groups!! (10 min)</h3>
 <div class="slideContent" >
 <ol>
-<li>What needs to happen next for your study and when/who will do it?</li>
-<li>When will you actually start collecting data?</li>
+<li>Introduce yourselves.</li>
+<li>Go around and give ~1 minute description of your MP1.</li>
+<li>Use rest of time to begin brainstorming MP2 topics. </li>
 </ol>
 
 </div>

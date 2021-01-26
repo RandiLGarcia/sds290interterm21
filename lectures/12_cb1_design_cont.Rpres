@@ -29,15 +29,53 @@ Agenda
 - Blocking principal 
 - The Complete Block Design
 
-Degrees of freedom in BF[2] design
+ANOVA Source Table for BF[2]
 =======================================================
 
+$${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\alpha\beta}_{ij}+{e}_{ijk}$$
 
-MP2 Groups
+| Source | SS | df | MS | F |
+|------:|:-----:|:-----:|:------:|:------:|
+| Treatment A | $\sum_{i=1}^{a}bn(\bar{y}_{i..}-\bar{y}_{…})^{2}$ | $a-1$ | $\frac{{SS}_{A}}{{df}_{A}}$ | $\frac{{MS}_{A}}{{MS}_{E}}$ |
+| Treatment B | $\sum_{j=1}^{b}an(\bar{y}_{.j.}-\bar{y}_{…})^{2}$ | $b-1$ | $\frac{{SS}_{B}}{{df}_{B}}$ | $\frac{{MS}_{B}}{{MS}_{E}}$ |
+| Interaction AB | $n\sum_{i=1}^{a}\sum_{j=1}^{b}(\bar{y}_{ij.}-\bar{y}_{i..}-\bar{y}_{.j.}+\bar{y}_{…})^{2}$ | $(a-1)(b-1)$ | $\frac{{SS}_{AB}}{{df}_{AB}}$ | $\frac{{MS}_{AB}}{{MS}_{E}}$ |
+| Error | $\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{k=1}^{n}({y}_{ijk}-\bar{y}_{ij.})^{2}$ | $ab(n-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
+
+ANOVA Source Table for BF[2]
 =======================================================
 
-1. What needs to happen next for your study and when/who will do it?
-3. When will you actually start collecting data?
+- $i$ is the index and $a$ is the number of levels of Factor A.
+- $j$ is the index and $b$ is the number of levels of Factor B.
+- $k$ is the index for observations and $n$ is the number of observations in a cell.
+- ${\mu}$ is the benchmark.
+- ${\alpha}_{i}$ is the effect of the $ith$ condition of Factor A.
+- ${\beta}_{j}$ is the effect of the $jth$ condition of Factor B.
+- ${\alpha\beta}_{ij}$ is the effect of the $ijth$ condition of the AB interaction.
+
+Degrees of freedom counting 
+=======================================================
+
+- See page 174 for BF[1] and page 221 for BF[2]
+
+Confidence Intervals for Treatment Effects 
+=======================================================
+
+See section 3.5 of textbook (page 80)
+
+$${\alpha}_{i} \pm \sqrt{{MS}_{res}}*leverage*t({df}_{res})$$
+
+- ${\alpha}_{i}$ is the treatment effect estimate.
+- $\sqrt{{MS}_{res}}*leverage$ is the standard error of the estimate.
+- $t({df}_{res})$ is the t-value the dictates distance of the interval.
+
+A look back at the [formal ANOVA code](https://randilgarcia.github.io/sds290interterm21/lectures/05_formal_anova.Rmd)
+
+MP2 Groups!! (10 min)
+=======================================================
+
+1. Introduce yourselves.
+2. Go around and give ~1 minute description of your MP1.
+3. Use rest of time to begin brainstorming MP2 topics. 
 
 Example
 =======================================================
