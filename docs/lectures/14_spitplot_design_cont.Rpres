@@ -38,9 +38,80 @@ Announcements
 Agenda
 ======================================================== 
 
+- scatterplots 
 - Tulips and parsnips
 - Split plot designs
   - Crossing versus nesting
+
+Data Analysis Structure
+=======================================================
+
+```{r, echo=FALSE}
+library(tidyr)
+library(dplyr)
+library(knitr)
+
+tree <- c(rep("tree1",3), rep("tree2",3), rep("tree3", 3),rep("tree4", 3), rep("tree5", 3))
+treatment <- rep(c("water", "spores", "oil"), 5)
+bugs_change <- c(-9, -4, 4, 18, 29, 29, 10, 4, 14, 9, -2, 14, -6, 11, 7)
+
+mealybugs <- data.frame(tree, treatment, bugs_change)
+```
+
+```{r}
+mealybugs
+```
+
+Informal Analysis Structure
+=======================================================
+
+```{r}
+library(tidyr)
+library(ggplot2)
+
+mealybugs %>%
+  spread(treatment, bugs_change)
+```
+
+Scatterplots
+=======================================================
+
+Spores versus oil
+
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = spores, y = oil)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 8)
+```
+
+Scatterplots
+=======================================================
+
+Spores versus water
+
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = spores, y = water)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = -5)
+```
+
+Scatterplots
+=======================================================
+
+Oil versus water
+
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = oil, y = water)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = -13)
+```
+
 
 Split Plot Design
 =======================================================

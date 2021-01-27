@@ -7,13 +7,13 @@ transition: linear
 transition-speed: default
 font-family: 'Helvetica'
 
-
-Reading Free-Write (5 minutes)
+Reading contemplation question
 ========================================================
 
-  1. When we make a scatterplot of observations between two treatments within-blocks, 
-     what are we hoping to see? Which fisher assumption does this relate to?
-  2. What sorts are things are confusing/fuzzy from Ch 7?
+  1. Imagine a latin square design where the factor of interest has four levels. How many levels will 
+  you need of the blocking factor 1? How many levels of blocking factor 2? 
+
+
   
   
 Reading Free-Write (answer)

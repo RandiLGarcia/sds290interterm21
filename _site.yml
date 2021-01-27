@@ -61,8 +61,9 @@ navbar:
     - text: 13 - CB[1] Design II
       href: lectures/12_cb1_design_cont.html       
     - text: 14 - Latin Square Design
+      href: lectures/12b_latinsquare_design.html  
+    - text: 15 - SP/RM[1,1] Design
 #      href: lectures/13_spitplot_design.html  
-#    - text: 15 - SP/RM[1,1] Design
 #      href: lectures/14_spitplot_design_cont.html       
 #    - text: 16 - Extending the Basic Designs
 #      href: lectures/15_extensions.html   

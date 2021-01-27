@@ -84,6 +84,10 @@ For example:
 leaf %>%
   filter(diet == "control" | diet == "sucrose") %>%
   t.test(days ~ diet, data = .)
+
+leaf %>%
+  filter(diet == "control" | diet == "sucrose") %>%
+  t.test(days ~ diet, data = ., var.equal = TRUE)
 ```
 
 Or using the linear model from above

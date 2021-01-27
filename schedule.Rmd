@@ -129,7 +129,7 @@ Please read the specified sections *before* class that day.
 ***
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Mon, Jan 25
 + Blocking and the CB[1] design 
 + Evening session: Optional office hours
@@ -137,7 +137,7 @@ Please read the specified sections *before* class that day.
     + Read Ch 7.1
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Tue, Jan 26
 + Blocking and the CB[1] design (cont.)
 + Homework due today:
