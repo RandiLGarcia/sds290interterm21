@@ -29,22 +29,24 @@ Agenda
 Example
 =======================================================
 
-Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). Baby rats were separated into five groups of 40 to form groups of approximately the same weight. The 40 rats in each group were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
+[Google slides](https://docs.google.com/presentation/d/1Vjc7pDzjC8iCOuMInZxrV7zOM2wuJ8h9G9qR7291l-A/edit?usp=sharing)
+
+Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and amino acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). Baby rats were separated into five groups of 40 to form groups of approximately the same weight. The 40 rats in each group were randomly assigned to each of the 40 conditions. Body weight and food consumption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
 
 Example - Basic Factorial Design [2]
 =======================================================
 
-Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and animo acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). 200 baby rats were randomly assigned to each of the 40 conditions. Body weight and food consumtption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
+Male albino laboratory rats are used routinely in many kinds of experiments. This experiment was designed to determine the requirements for protein and amino acid threonine in their food. Specifically, the experiment is interested in testing the combinations of eight levels of threonine (.2 through .9% of diet) and five levels of protein (8.68, 12, 15, 18, and 21% of diet). 200 baby rats were randomly assigned to each of the 40 conditions. Body weight and food consumption were measured twice weekly, and the average daily weight gain over 21 days was recorded.
 
 Example
 =======================================================
 
-This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.   
+This experiment is interested in the blood concentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.   
 
 Example - Basic Factorial Design
 =======================================================
 
-This experiment is interested in the blood consicentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use nine subjects, and randomly assign subjects to one of the three delivery methods. The area under the time-concentration curve is recorded for each subject after beging given the drug.
+This experiment is interested in the blood concentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use nine subjects, and randomly assign subjects to one of the three delivery methods. The area under the time-concentration curve is recorded for each subject after being given the drug.
 
 
 Design Principal: Blocking
@@ -61,13 +63,13 @@ Three Ways to Block
 
 1. Sort units into similar groups
     - Albino rats
-2. Subdivide larger chunks of material into sets of smaller peices
+2. Subdivide larger chunks of material into sets of smaller pieces
     - Mealybug trees
-3. Reuse subjects or material in each of sveral times slots
+3. Reuse subjects or material in each of several times slots
     - Drug study
 
 
-Complete Block Desgin, CB[1]
+Complete Block Design, CB[1]
 =======================================================
 
 - Experimental material are separated into groups (or reused) to create similar units 
@@ -317,7 +319,7 @@ ggplot(bioequivalence, aes(x = fitted, residuals)) +
   geom_hline(yintercept = 0, color = "red")
 ```
 
-Tuplips
+Tulips
 ========================================================
 A plant breeder wishes to study the effects of soil drainage and variety of tulip bulbs on flower production. Twelve 3m by 10m experimental sites are available in the test garden--each is a .5m deep trench. You can manipulate soil drainage by changing the ratio of sand to clay for the soil you put in a trench. After talking to your collaborator, you decided that four different levels of soil drainage would suffice. You'll be testing 15 different types of tulips, and measuring flower production in the spring.
 
