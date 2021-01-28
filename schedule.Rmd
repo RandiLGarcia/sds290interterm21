@@ -145,7 +145,7 @@ Please read the specified sections *before* class that day.
     + Work on quiz
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Wed, Jan 27
 + Latin Square design
 + Evening session: **MP2**
@@ -168,7 +168,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Feb 1
 + The Split Plot/Repeated Measures design (cont.)
-+ Evening session: **MP2**
++ Evening session: Working through **HW7** problems (recorded)
 + Homework due today:
     + Read Ch. 7.4
   </div>
@@ -195,7 +195,8 @@ Please read the specified sections *before* class that day.
 + **Quiz 2 HANDED OUT**
 + Homework due today:
     + Read Ch. 9.3
-    + **HW #7 due thurs at 11:55p**
+    + [**HW #7 due thurs at 11:55p**](homework.html)
+    + Post MP2 surveys for pre-approval by tomorrow morning
   </div>
 </div>
 
@@ -204,7 +205,9 @@ Please read the specified sections *before* class that day.
 <div class="row">
   <div class="col-md-3">
 #### Mon, Feb 8
++ MP2 data collection
 + Compound within-blocks factors
++ Evening session: Optional office hours
 + Homework due today:
     + Read Ch 9.4
   </div>
@@ -214,7 +217,7 @@ Please read the specified sections *before* class that day.
 + Visualizing 3-factor interactions
 + Homework due today:
     + Read Ch 9.5
-    + [**HW #8 due today at 9:20a**](labs/homework9.html)
+    + [**HW #8 due today at 9:20a**](homework.html)
   </div>
   
   <div class="col-md-3">

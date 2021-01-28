@@ -62,8 +62,9 @@ navbar:
       href: lectures/12_cb1_design_cont.html       
     - text: 14 - Latin Square Design
       href: lectures/12b_latinsquare_design.html  
-    - text: 15 - SP/RM[1,1] Design
-#      href: lectures/13_spitplot_design.html  
+    - text: 15 - SP/RM[1,1] Design I
+      href: lectures/13_spitplot_design.html 
+    - text: 16 - SP/RM[1,1] Design II      
 #      href: lectures/14_spitplot_design_cont.html       
 #    - text: 16 - Extending the Basic Designs
 #      href: lectures/15_extensions.html   
@@ -109,8 +110,8 @@ navbar:
       href: homework.html
     - text: 'HW6: Using software; Due 2/02 at 9:20a'
       href: labs/homework6_W21.html
-#    - text: 'HW7: RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9'
-#      href: homework.html  
+    - text: 'HW7: RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9'
+      href: homework.html  
 #    - text: 'HW8: Using software - BF[2], Compound factors'
 #      href: labs/homework9.html        
 #    - text: 'HW9: Using software-last homework'      

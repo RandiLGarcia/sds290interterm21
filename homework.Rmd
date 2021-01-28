@@ -21,7 +21,7 @@ title: 'Homework'
     + [HW #6: Using software](labs/homework6_W21.html)
     
 #. Due Thursday, February 4th:
-    <!-- + [HW #7: **Ch 7**: A1-A3, A6, B5-B6, C1-C3, C6-C9](labs/homework7.html) -->
+    + [HW #7: **Ch 7**: A1-A3, A6, B5-B6, C1-C3, C6-C9](labs/homework7.html)
     
 #. Due Tuesday, February 9th:
     <!-- + [HW #8: using software](labs/homework9.html) -->

@@ -1,7 +1,7 @@
 Split Plot/Repeated Measures Design
 ========================================================
 author: Prof Randi Garcia
-date: March 27, 2019
+date: January 28, 2021
 autosize: true
 transition: linear
 transition-speed: default
@@ -9,30 +9,27 @@ font-family: 'Helvetica'
 
 Reading contemplation question
 ========================================================
-
-  1. Imagine a latin square design where the factor of interest has four levels. How many levels will 
-  you need of the blocking factor 1? How many levels of blocking factor 2? 
-
-
   
-  
-Reading Free-Write (answer)
-========================================================  
-  
-In a scatterplot displaying the relationship bewteen two treatments within block 
-we hope to see the points forming roughly a 45 degree line, or the $y = x$ line. 
-The intercept of this line could be anything ($y = x$ plus some constant, plus 
-error). This would provide evidence of the additivity assumption. 
+1. Sketch what the data in Figure 7.7 (on pg. 254) might look like in a 
+     data frame that is ready for analysis?
   
 Announcements
 ========================================================
 
-- No homework this week
-- HW#7 due on Apr 5 (Friday at noon)
-  - RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9
-- Projects!!
-    - Final approval due date moved to tomorrow, **Mar 28**
-- DataFest starts on Friday night!!
+- Quiz 1 due tonight 11:55p
+  - Please upload PDF
+- HW6 due on Tues 2/02 9:20a  
+- HW7 due on Thurs 2/04 11:55p
+- MP2
+  - Groups posted [here](https://docs.google.com/spreadsheets/d/1N3x8QzJ6hWPYg7ALIWS96XQJR7A3s2Mu1uf4SD85HqM/edit?usp=sharing)
+  - Pre-approval submissions due Fri 2/05 at 9:20a
+
+Syllabus update
+========================================================
+
+I am now dropping the lowest **TWO** homework scores
+
+- polleverywhere question about content requests!
     
 Agenda
 ========================================================
@@ -88,62 +85,61 @@ mod <- lm(bugs_change ~ treatment + tree, data = mealybugs)
 anova(mod)
 ```
 
-Informal Analysis Structure
-=======================================================
+<!-- Informal Analysis Structure -->
+<!-- ======================================================= -->
 
-```{r}
-library(tidyr)
-library(ggplot2)
+<!-- ```{r} -->
+<!-- library(tidyr) -->
+<!-- library(ggplot2) -->
 
-mealybugs %>%
-  spread(treatment, bugs_change)
-```
+<!-- mealybugs %>% -->
+<!--   spread(treatment, bugs_change) -->
+<!-- ``` -->
 
-Scatterplots
-=======================================================
+<!-- Scatterplots -->
+<!-- ======================================================= -->
 
-Spores versus oil
+<!-- Spores versus oil -->
 
-```{r}
-mealybugs %>%
-  spread(treatment, bugs_change) %>%
-  ggplot(aes(x = spores, y = oil)) +
-  geom_point() +
-  geom_abline(slope = 1, intercept = 8)
-```
+<!-- ```{r} -->
+<!-- mealybugs %>% -->
+<!--   spread(treatment, bugs_change) %>% -->
+<!--   ggplot(aes(x = spores, y = oil)) + -->
+<!--   geom_point() + -->
+<!--   geom_abline(slope = 1, intercept = 8) -->
+<!-- ``` -->
 
-Scatterplots
-=======================================================
+<!-- Scatterplots -->
+<!-- ======================================================= -->
 
-Spores versus water
+<!-- Spores versus water -->
 
-```{r}
-mealybugs %>%
-  spread(treatment, bugs_change) %>%
-  ggplot(aes(x = spores, y = water)) +
-  geom_point() +
-  geom_abline(slope = 1, intercept = -5)
-```
+<!-- ```{r} -->
+<!-- mealybugs %>% -->
+<!--   spread(treatment, bugs_change) %>% -->
+<!--   ggplot(aes(x = spores, y = water)) + -->
+<!--   geom_point() + -->
+<!--   geom_abline(slope = 1, intercept = -5) -->
+<!-- ``` -->
 
-Scatterplots
-=======================================================
+<!-- Scatterplots -->
+<!-- ======================================================= -->
 
-Oil versus water
+<!-- Oil versus water -->
 
-```{r}
-mealybugs %>%
-  spread(treatment, bugs_change) %>%
-  ggplot(aes(x = oil, y = water)) +
-  geom_point() +
-  geom_abline(slope = 1, intercept = -13)
-```
+<!-- ```{r} -->
+<!-- mealybugs %>% -->
+<!--   spread(treatment, bugs_change) %>% -->
+<!--   ggplot(aes(x = oil, y = water)) + -->
+<!--   geom_point() + -->
+<!--   geom_abline(slope = 1, intercept = -13) -->
+<!-- ``` -->
 
 
 Bioequivalence of drug delivery
 =======================================================
 
 This experiment is interested in the blood concentration of a drug after it has been administered. The concentration will start at zero, then go up, and back down as it is metabolized. This curve may differ depending on the form of the drug (a solution, a tablet, or a capsule). We will use three subjects, and each subject will be given the drug three times, once for each method. The area under the time-concentration curve is recorded for each subject after each method of drug delivery.  
-
 
 Latin Square Design
 =======================================================
@@ -216,7 +212,6 @@ sd <- favstats(c_curve ~ treatment, data = bioequivalence)[,8]
 max(sd)/min(sd)
 ```
 
-
 Formal ANOVA for the Latin Square
 =======================================================
 
@@ -244,7 +239,6 @@ ls_mod <- lm(c_curve ~ treatment + period + subject, data = bioequivalence)
 
 anova(ls_mod)
 ```
-
 
 Residual Plot
 =======================================================
@@ -274,6 +268,9 @@ ggplot(bioequivalence, aes(x = fitted, residuals)) +
 
 Tuplips
 ========================================================
+
+How would you conduct this study?
+
 A plant breeder wishes to study the effects of soil drainage and variety of tulip bulbs on flower production. Twelve 3m by 10m experimental sites are available in the test garden--each is a .5m deep trench. You can manipulate soil drainage by changing the ratio of sand to clay for the soil you put in a trench. After talking to your collaborator, you decided that four different levels of soil drainage would suffice. You'll be testing 15 different types of tulips, and measuring flower production in the spring.
 
 Split Plot Design
@@ -285,10 +282,9 @@ If you suspect a design in a split-plot design, you should be able to answer the
 2. What is the between-blocks factor? Is it observational or experimental?
 3. What is the within-blocks factor? Is it observational or experimental? 
 
-Example: Addled Goose Eggs
-=======================================================
-
-The Canada goose is a magnificent bird, but it can be a nuisance in urban areas in large numbers. One method of population control is to addle eggs in nests, but this method can hard adult females. Would removal of the eggs at the usual hatch date prevent harm? It is suspected that females nesting together at different sites are similar to each other. We randomly select 5 different sites, and we then randomly assign 5 nests per site to the addle with no removal condition, and 5 nests per site to the addle plus removal condition. The females at the nests are banded such that survival age can be measured later.  
+Example: Tuplips
+========================================================
+A plant breeder wishes to study the effects of soil drainage and variety of tulip bulbs on flower production. Twelve 3m by 10m experimental sites are available in the test garden--each is a .5m deep trench. You can manipulate soil drainage by changing the ratio of sand to clay for the soil you put in a trench. After talking to your collaborator, you decided that four different levels of soil drainage would suffice. You'll be testing 15 different types of tulips, and measuring flower production in the spring.
 
 Crossing versus Nesting
 =======================================================
