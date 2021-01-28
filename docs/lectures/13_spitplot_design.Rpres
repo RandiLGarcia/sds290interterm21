@@ -136,6 +136,7 @@ anova(mod)
 <!-- ``` -->
 
 
+
 Bioequivalence of drug delivery
 =======================================================
 
@@ -156,7 +157,7 @@ Latin Square Design
 Treatments: 
 - Solution is treatment A
 - Tablet is treatment B
-- Capsule C is treatment C
+- Capsule is treatment C
 
 ```{r, echo=FALSE}
 subject <- c(rep("1",3), rep("2",3), rep("3", 3))
@@ -172,6 +173,12 @@ bioequivalence <- data.frame(subject, treatment, period, concentration)
 bioequivalence %>%
   select(-treatment) %>%
   spread(subject, concentration) %>%
+  rename(` ` = period,
+         `period 1` = `1`,
+         `period 2` = `2`,
+         `period 3` = `3`) %>%
+  mutate(` ` = ifelse(` ` == "1", "subject 1", 
+                      ifelse(` ` == "2", "subject 2", "subject 3"))) %>%
   kable()
 ```
 
@@ -180,7 +187,7 @@ Factor diagram for the Latin Square??
 Latin Square Design
 =======================================================
 
-The actual data structure for analysis is "long."
+The actual data structure for analysis is "long" format
 
 ```{r, echo=FALSE}
 bioequivalence <- data.frame(subject, treatment, period, concentration) %>%
@@ -212,6 +219,7 @@ sd <- favstats(c_curve ~ treatment, data = bioequivalence)[,8]
 max(sd)/min(sd)
 ```
 
+
 Formal ANOVA for the Latin Square
 =======================================================
 
@@ -239,6 +247,7 @@ ls_mod <- lm(c_curve ~ treatment + period + subject, data = bioequivalence)
 
 anova(ls_mod)
 ```
+
 
 Residual Plot
 =======================================================
