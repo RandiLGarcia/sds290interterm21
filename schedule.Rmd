@@ -153,7 +153,7 @@ Please read the specified sections *before* class that day.
     + Read Ch 7.2
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Thurs, Jan 28
 + The Split Plot/Repeated Measures design
 + Homework due today:
@@ -168,6 +168,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Feb 1
 + The Split Plot/Repeated Measures design (cont.)
++ Practice designs
 + Evening session: Working through **HW7** problems (recorded)
 + Homework due today:
     + Read Ch. 7.4
@@ -176,6 +177,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Tue, Feb 2
 + Scatterplots for data sets with blocks
++ Practice designs
 + Homework due today:
     + Read Ch 7.5 
     + [**HW #6 due today at 9:20a**](homework.html)
@@ -183,18 +185,20 @@ Please read the specified sections *before* class that day.
   
   <div class="col-md-3">
 #### Wed, Feb 3
-+ Extending the basic designs
++ Practice designs
++ Confidence intervals and effect sizes
++ ANOVA and linear regression
 + Evening session: **MP2**
 + Homework due today:
-    + Read Ch 9.1-9.2
+    + Work on MP2
   </div>
   
   <div class="col-md-3">
 #### Thurs, Feb 4
-+ BF[3+] Designs
++ Extending the basic designs
 + **Quiz 2 HANDED OUT**
 + Homework due today:
-    + Read Ch. 9.3
+    + Read Ch. 9.1-9.2
     + [**HW #7 due thurs at 11:55p**](homework.html)
     + Post MP2 surveys for pre-approval by tomorrow morning
   </div>
@@ -206,23 +210,26 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Feb 8
 + MP2 data collection
++ More on transformations
 + Compound within-blocks factors
 + Evening session: Optional office hours
 + Homework due today:
-    + Read Ch 9.4
+    + Read Ch 9.3
   </div>
   
   <div class="col-md-3">
 #### Tue, Feb 9
++ Ethics
 + Visualizing 3-factor interactions
 + Homework due today:
-    + Read Ch 9.5
+    + Read Ch 9.4-9.5
     + [**HW #8 due today at 9:20a**](homework.html)
   </div>
   
   <div class="col-md-3">
 #### Wed, Feb 10
 + Multiple Comparisons
++ Power
 + Evening session: **MP2**
 + Homework due today:
     + Read Ch 11.1-11.2
@@ -230,7 +237,8 @@ Please read the specified sections *before* class that day.
   
   <div class="col-md-3">
 #### Thurs, Feb 11
-+ MP2 Presentations
++ MP2 Presentations??
++ Alternatives to ANOVA
 + Homework due today:
     + **MP2 Due Friday Feb 12 at 11:55p**
     + **Quiz 2 Due Friday Feb 12 at 11:55p**

@@ -203,6 +203,8 @@ Informal ANOVA for Latin Square
 We can make a parallel dot graph
 
 ```{r, echo=FALSE}
+library(ggplot2)
+
 ggplot(bioequivalence, aes(x = treatment, y = c_curve)) +
   geom_point()
 ```
