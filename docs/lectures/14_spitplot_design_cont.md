@@ -76,30 +76,12 @@ Treatments:
 - Tablet is treatment B
 - Capsule is treatment C
 
-```{r, echo=FALSE}
-library(tidyverse)
 
-subject <- c(rep("1",3), rep("2",3), rep("3", 3))
-treatment <- c("solution", "capsule", "tablet",
-               "capsule", "tablet", "solution",
-               "tablet", "solution", "capsule")
-period <- rep(c("1", "2", "3"),3)
-concentration <- c("A 1799", "C 1846", "B 2147", "C 2075", "B 1156", "A 1777",
-                   "B 1396", "A 868", "C 2291")
-
-bioequivalence <- data.frame(subject, treatment, period, concentration) 
-
-bioequivalence %>%
-  select(-treatment) %>%
-  spread(subject, concentration) %>%
-  rename(` ` = period,
-         `period 1` = `1`,
-         `period 2` = `2`,
-         `period 3` = `3`) %>%
-  mutate(` ` = ifelse(` ` == "1", "subject 1", 
-                      ifelse(` ` == "2", "subject 2", "subject 3"))) %>%
-  kable()
-```
+|          |period 1 |period 2 |period 3 |
+|:---------|:--------|:--------|:--------|
+|subject 1 |A 1799   |C 2075   |B 1396   |
+|subject 2 |C 1846   |B 1156   |A 868    |
+|subject 3 |B 2147   |A 1777   |C 2291   |
 
 Factor diagram for the Latin Square
 
@@ -108,34 +90,41 @@ Latin Square Design
 
 The actual data structure for analysis is "long" format
 
-```{r, echo=FALSE}
-bioequivalence <- data.frame(subject, treatment, period, concentration) %>%
-  separate(concentration, c("group", "c_curve"))
 
-bioequivalence %>%
-  kable()
-```
+|subject |treatment |period |group |c_curve |
+|:-------|:---------|:------|:-----|:-------|
+|1       |solution  |1      |A     |1799    |
+|1       |capsule   |2      |C     |1846    |
+|1       |tablet    |3      |B     |2147    |
+|2       |capsule   |1      |C     |2075    |
+|2       |tablet    |2      |B     |1156    |
+|2       |solution  |3      |A     |1777    |
+|3       |tablet    |1      |B     |1396    |
+|3       |solution  |2      |A     |868     |
+|3       |capsule   |3      |C     |2291    |
 
 Informal ANOVA for Latin Square
 =======================================================
 
 We can make a parallel dot graph
 
-```{r, echo=FALSE}
-ggplot(bioequivalence, aes(x = treatment, y = c_curve)) +
-  geom_point()
-```
+![plot of chunk unnamed-chunk-3](14_spitplot_design_cont-figure/unnamed-chunk-3-1.png)
 
 ***
 
 And check for equal standard deviations
 
-```{r}
+
+```r
 library(mosaic)
 
 sd <- favstats(c_curve ~ treatment, data = bioequivalence)[,8]
 
 max(sd)/min(sd)
+```
+
+```
+[1] 2.387418
 ```
 
 
@@ -161,17 +150,32 @@ $${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j}+{\tau}_{k}+{e}_{ijk}$$
 Formal ANOVA for the Latin Square
 =======================================================
 
-```{r}
+
+```r
 ls_mod <- lm(c_curve ~ treatment + period + subject, data = bioequivalence)
 
 anova(ls_mod)
 ```
 
+```
+Analysis of Variance Table
+
+Response: c_curve
+          Df Sum Sq Mean Sq F value   Pr(>F)   
+treatment  2 608891  304445  67.733 0.014549 * 
+period     2 928006  464003 103.231 0.009594 **
+subject    2 261115  130557  29.047 0.033282 * 
+Residuals  2   8990    4495                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
 
 Residual Plot
 =======================================================
 
-```{r, eval=FALSE}
+
+```r
 bioequivalence <- bioequivalence %>%
   mutate(fitted = fitted(ls_mod), 
          residuals = residuals(ls_mod))
@@ -184,15 +188,7 @@ ggplot(bioequivalence, aes(x = fitted, residuals)) +
 Residual Plot
 =======================================================
 
-```{r, echo=FALSE}
-bioequivalence <- bioequivalence %>%
-  mutate(fitted = fitted(ls_mod), 
-         residuals = residuals(ls_mod))
-
-ggplot(bioequivalence, aes(x = fitted, residuals)) +
-  geom_point() +
-  geom_hline(yintercept = 0, color = "red")
-```
+![plot of chunk unnamed-chunk-7](14_spitplot_design_cont-figure/unnamed-chunk-7-1.png)
 
 Tulips
 ========================================================
