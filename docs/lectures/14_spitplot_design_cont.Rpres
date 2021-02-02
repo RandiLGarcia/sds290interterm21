@@ -267,97 +267,97 @@ Analysis in R
 
 [See r code](lectures/13_spitplot_design_inR.Rmd)
 
-<!-- Scatterplots for Within-Blocks Factors -->
-<!-- ======================================================= -->
+Scatterplots for Within-Blocks Factors
+=======================================================
 
-<!-- ```{r, echo=FALSE} -->
-<!-- library(tidyr) -->
-<!-- library(dplyr) -->
-<!-- library(knitr) -->
+```{r, echo=FALSE}
+library(tidyr)
+library(dplyr)
+library(knitr)
 
-<!-- tree <- c(rep("tree1",3), rep("tree2",3), rep("tree3", 3),rep("tree4", 3), rep("tree5", 3)) -->
-<!-- treatment <- rep(c("water", "spores", "oil"), 5) -->
-<!-- bugs_change <- c(-9, -4, 4, 18, 29, 29, 10, 4, 14, 9, -2, 14, -6, 11, 7) -->
+tree <- c(rep("tree1",3), rep("tree2",3), rep("tree3", 3),rep("tree4", 3), rep("tree5", 3))
+treatment <- rep(c("water", "spores", "oil"), 5)
+bugs_change <- c(-9, -4, 4, 18, 29, 29, 10, 4, 14, 9, -2, 14, -6, 11, 7)
 
-<!-- mealybugs <- data.frame(tree, treatment, bugs_change) -->
-<!-- ``` -->
+mealybugs <- data.frame(tree, treatment, bugs_change)
+```
 
-<!-- ```{r} -->
-<!-- mealybugs -->
-<!-- ``` -->
+```{r}
+mealybugs
+```
 
-<!-- Informal Analysis Structure -->
-<!-- ======================================================= -->
+Informal Analysis Structure
+=======================================================
 
-<!-- ```{r} -->
-<!-- library(tidyr) -->
-<!-- library(ggplot2) -->
+```{r}
+library(tidyr)
+library(ggplot2)
 
-<!-- mealybugs %>% -->
-<!--   spread(treatment, bugs_change) -->
-<!-- ``` -->
+mealybugs %>%
+  spread(treatment, bugs_change)
+```
 
-<!-- Scatterplots -->
-<!-- ======================================================= -->
+Scatterplots
+=======================================================
 
-<!-- Spores versus oil -->
+Spores versus oil
 
-<!-- ```{r} -->
-<!-- mealybugs %>% -->
-<!--   spread(treatment, bugs_change) %>% -->
-<!--   ggplot(aes(x = spores, y = oil)) + -->
-<!--   geom_point() + -->
-<!--   geom_abline(slope = 1, intercept = 8) -->
-<!-- ``` -->
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = spores, y = oil)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 8)
+```
 
-<!-- Scatterplots -->
-<!-- ======================================================= -->
+Scatterplots
+=======================================================
 
-<!-- Spores versus water -->
+Spores versus water
 
-<!-- ```{r} -->
-<!-- mealybugs %>% -->
-<!--   spread(treatment, bugs_change) %>% -->
-<!--   ggplot(aes(x = spores, y = water)) + -->
-<!--   geom_point() + -->
-<!--   geom_abline(slope = 1, intercept = -5) -->
-<!-- ``` -->
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = spores, y = water)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = -5)
+```
 
-<!-- Scatterplots -->
-<!-- ======================================================= -->
+Scatterplots
+=======================================================
 
-<!-- Oil versus water -->
+Oil versus water
 
-<!-- ```{r} -->
-<!-- mealybugs %>% -->
-<!--   spread(treatment, bugs_change) %>% -->
-<!--   ggplot(aes(x = oil, y = water)) + -->
-<!--   geom_point() + -->
-<!--   geom_abline(slope = 1, intercept = -13) -->
-<!-- ``` -->
+```{r}
+mealybugs %>%
+  spread(treatment, bugs_change) %>%
+  ggplot(aes(x = oil, y = water)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = -13)
+```
 
-<!-- Split Plot Design -->
-<!-- ======================================================= -->
+Split Plot Design
+=======================================================
 
-<!-- If you suspect a design in a split-plot design, you should be able to answer the following questions: -->
+If you suspect a design in a split-plot design, you should be able to answer the following questions:
 
-<!-- 1. What are the whole plots, that is, what is the blocking factor? -->
-<!-- 2. What is the between-blocks factor? Is it observational or experimental? -->
-<!-- 3. What is the within-blocks factor? Is it observational or experimental?  -->
+1. What are the whole plots, that is, what is the blocking factor?
+2. What is the between-blocks factor? Is it observational or experimental?
+3. What is the within-blocks factor? Is it observational or experimental?
 
-<!-- Tulips -->
-<!-- ======================================================== -->
-<!-- A plant breeder wishes to study the effects of soil drainage and variety of tulip bulbs on flower production. Twelve 3m by 10m experimental sites are available in the test garden--each is a .5m deep trench. You can manipulate soil drainage by changing the ratio of sand to clay for the soil you put in a trench. After talking to your collaborator, you decided that four different levels of soil drainage would suffice. You'll be testing 15 different types of tulips, and measuring flower production in the spring. -->
+Tulips
+========================================================
+A plant breeder wishes to study the effects of soil drainage and variety of tulip bulbs on flower production. Twelve 3m by 10m experimental sites are available in the test garden--each is a .5m deep trench. You can manipulate soil drainage by changing the ratio of sand to clay for the soil you put in a trench. After talking to your collaborator, you decided that four different levels of soil drainage would suffice. You'll be testing 15 different types of tulips, and measuring flower production in the spring.
 
-<!-- Example from HW7: Parsnip Plants -->
-<!-- ======================================================= -->
+Example from HW7: Parsnip Plants
+=======================================================
 
-<!-- Under the control conditions of this study, wild parsnip plants averaged about a thousand seeds from their first set of flowers (primary umbels), about twice as many from the second set of flowers, but only about 250 from the third set. For plants attacked by the parsnip webworm, which destroyed most of the primary umbels, the pattern was quite different: the seed production from primary, secondary, and tertiary umbels averaged about 200, 2400, and 1300, respectively.  -->
+Under the control conditions of this study, wild parsnip plants averaged about a thousand seeds from their first set of flowers (primary umbels), about twice as many from the second set of flowers, but only about 250 from the third set. For plants attacked by the parsnip webworm, which destroyed most of the primary umbels, the pattern was quite different: the seed production from primary, secondary, and tertiary umbels averaged about 200, 2400, and 1300, respectively.
 
-<!-- Example: Diabetic Dogs -->
-<!-- ======================================================= -->
+Example: Diabetic Dogs
+=======================================================
 
-<!-- The disease diabetes affects the rate of turnover of lactic acid in a system of biochemical reactions called the Cori cycle. This experiment compares two methods of using radioactive carbon-14 to measure rate of turnover. Method 1 is injection all at once, and method 2 is infused continuously. 10 dogs were sorted into two groups, 5 were controls and 5 had their pancreas removed (to make it diabetic). The rate of turnover was then measured twice for each dog, once for each method. The order of the two methods was randomly assigned.  -->
+The disease diabetes affects the rate of turnover of lactic acid in a system of biochemical reactions called the Cori cycle. This experiment compares two methods of using radioactive carbon-14 to measure rate of turnover. Method 1 is injection all at once, and method 2 is infused continuously. 10 dogs were sorted into two groups, 5 were controls and 5 had their pancreas removed (to make it diabetic). The rate of turnover was then measured twice for each dog, once for each method. The order of the two methods was randomly assigned.
 
 
 

@@ -24,7 +24,7 @@ title: 'Homework'
     + HW #7: **Ch 7**: A1-A3, A6, B5-B6, C1-C3, C6-C9
     
 #. Due Tuesday, February 9th:
-    <!-- + [HW #8: using software](labs/homework9.html) -->
+    + [HW #8: using software](labs/homework8.html)
 
 
 

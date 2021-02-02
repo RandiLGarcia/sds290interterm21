@@ -67,8 +67,8 @@ navbar:
     - text: 16 - SP/RM[1,1] Design II      
       href: lectures/14_spitplot_design_cont.html  
     - text: 17 - Scatterplots for Within-Block Factors
-#      href: lectures/14b_spitplot_design_cont.html        
-#    - text: 16 - Extending the Basic Designs
+      href: lectures/14b_spitplot_design_cont.html        
+    - text: 18 - Extending the Basic Designs
 #      href: lectures/15_extensions.html   
 #    - text: 17 - Extending the Basic Designs (cont.)
 #      href: lectures/16_extensions_cont.html    
@@ -114,8 +114,8 @@ navbar:
       href: labs/homework6_W21.html
     - text: 'HW7: RE CH 7: A1-A3, A6, B5-B6, C1-C3, C6-C9'
       href: homework.html  
-#    - text: 'HW8: Using software - BF[2], Compound factors'
-#      href: labs/homework9.html        
+    - text: 'HW8: Using software - BF[2], Compound factors'
+      href: labs/homework8.html        
 #    - text: 'HW9: Using software-last homework'      
 #      href:           
   - text: Projects
