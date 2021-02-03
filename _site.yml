@@ -66,9 +66,11 @@ navbar:
       href: lectures/13_spitplot_design.html 
     - text: 16 - SP/RM[1,1] Design II      
       href: lectures/14_spitplot_design_cont.html  
-    - text: 17 - Scatterplots for Within-Block Factors
-      href: lectures/14b_spitplot_design_cont.html        
-    - text: 18 - Extending the Basic Designs
+    - text: 17 - Scatterplots for Within-Block Factors I
+      href: lectures/14b_spitplot_design_cont.html      
+    - text: 18 - Scatterplots for Within-Block Factors II
+      href: lectures/14c_spitplot_design_cont.html        
+    - text: 19 - Extending the Basic Designs
 #      href: lectures/15_extensions.html   
 #    - text: 17 - Extending the Basic Designs (cont.)
 #      href: lectures/16_extensions_cont.html    

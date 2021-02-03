@@ -165,7 +165,7 @@ Please read the specified sections *before* class that day.
 ***
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Mon, Feb 1
 + The Split Plot/Repeated Measures design (cont.)
 + Practice designs
@@ -174,7 +174,7 @@ Please read the specified sections *before* class that day.
     + Read Ch. 7.4
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Tue, Feb 2
 + Scatterplots for data sets with blocks
 + Practice designs
@@ -185,9 +185,8 @@ Please read the specified sections *before* class that day.
   
   <div class="col-md-3">
 #### Wed, Feb 3
++ Scatterplots for data sets with blocks
 + Practice designs
-+ Confidence intervals and effect sizes
-+ ANOVA and linear regression
 + Evening session: **MP2**
 + Homework due today:
     + Work on MP2
@@ -195,10 +194,10 @@ Please read the specified sections *before* class that day.
   
   <div class="col-md-3">
 #### Thurs, Feb 4
-+ Extending the basic designs
++ Confidence intervals and effect sizes
++ ANOVA and linear regression
 + **Quiz 2 HANDED OUT**
 + Homework due today:
-    + Read Ch. 9.1-9.2
     + [**HW #7 due thurs at 11:55p**](homework.html)
     + Post MP2 surveys for pre-approval by tomorrow morning
   </div>
@@ -211,18 +210,18 @@ Please read the specified sections *before* class that day.
 #### Mon, Feb 8
 + MP2 data collection
 + More on transformations
-+ Compound within-blocks factors
++ Extending basic designs
 + Evening session: Optional office hours
 + Homework due today:
-    + Read Ch 9.3
+    + Read Ch. 9.1-9.2  
   </div>
   
   <div class="col-md-3">
 #### Tue, Feb 9
 + Ethics
-+ Visualizing 3-factor interactions
++ Extending basic designs
 + Homework due today:
-    + Read Ch 9.4-9.5
+    + Read Ch 9.3
     + [**HW #8 due today at 9:20a**](homework.html)
   </div>
   
