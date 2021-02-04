@@ -183,7 +183,7 @@ Please read the specified sections *before* class that day.
     + [**HW #6 due today at 9:20a**](homework.html)
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Wed, Feb 3
 + Scatterplots for data sets with blocks
 + Practice designs

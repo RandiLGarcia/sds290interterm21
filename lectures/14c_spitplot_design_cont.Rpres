@@ -96,7 +96,8 @@ mealybugs <- data.frame(tree, treatment, bugs_change)
 ```
 
 ```{r}
-mealybugs
+mod <- lm(bugs_change ~ tree + treatment, data = mealybugs)
+anova(mod)
 ```
 
 Informal Analysis Structure
@@ -104,7 +105,7 @@ Informal Analysis Structure
 
 ```{r}
 mealybugs %>%
-  spread(treatment, bugs_change)
+  spread(treatment, bugs_change) 
 ```
 
 Scatterplots
