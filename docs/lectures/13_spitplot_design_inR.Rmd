@@ -1,14 +1,7 @@
----
-title: "CB[1], Latin Square"
-author: "Randi Garcia"
----
-  
 ```{r global-options, include=FALSE}
 knitr::opts_chunk$set(eval = FALSE)
-library(dplyr)
 library(lattice)
-library(ggplot2)
-library(tidyr)
+library(tidyverse)
 library(dae)
 library(mosaic)
 library(knitr)
@@ -24,6 +17,7 @@ bugs_change <- c(-9, -4, 4, 18, 29, 29, 10, 4, 14, 9, -2, 14, -6, 11, 7)
 mealybugs <- data.frame(tree, treatment, bugs_change)
 ```
 
+## Formal ANOVA
 
 ```{r}
 mod <- lm(bugs_change ~ treatment + tree, data = mealybugs)
@@ -34,11 +28,20 @@ anova(mod)
 ## Informal Analysis
 
 ```{r}
+#testing for S assumption
+mealybugs %>%
+  group_by(treatment) %>%
+  summarise(sd = sd(bugs_change))
+```
+
+```{r}
 mealybugs_wide <- mealybugs %>%
   spread(treatment, bugs_change)
 
 ggplot(mealybugs_wide, aes(x = spores, y = oil)) +
-  geom_point()
+  geom_point() +
+  geom_abline(intercept = 8, slope = 1) +
+  geom_smooth(method = "lm", se = 0)
 ```
 
 ```{r}
@@ -246,10 +249,13 @@ functon wants the blocking factor added as `+ (1|id)`.
 
 ```{r}
 library(lme4)
+library(lmerTest) #using this package in addition to lme4 gives us more information in the ANOVA table
 
 mod <- lmer(lconc ~ day_length*organ + (1|id), data = hamster)
 
-anova(mod)
+anova(mod) #note that the F-ratios are based on df calculated with a different method (Satterthwaite) than we've been learning in class. Please use the aov() function for the ANOVA table
+summary(mod) #use the lmerTest package and lmer() function if you desire test of differences between specific conditions. Note that the df are calculated with Satterthwaite
+confint(mod)
 ```
 
 Note that `lmer()` doesn't give p-values.
