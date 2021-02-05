@@ -82,7 +82,8 @@ navbar:
 #      href: lectures/18_fisher_assumptions.html 
 #    - text: 19 - Exam 2 Review   
 #      href: lectures/18_exam2_review.html      
-    - text: Code
+  - text: Code
+    menu:
     - text: 01 - Four Designs
       href: lectures/02_four_designs.Rmd
     - text: 02 - Informal ANOVA
