@@ -192,10 +192,9 @@ Please read the specified sections *before* class that day.
     + Work on MP2
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Thurs, Feb 4
 + Confidence intervals and effect sizes
-+ ANOVA and linear regression
 + **Quiz 2 HANDED OUT**
 + Homework due today:
     + [**HW #7 due thurs at 11:55p**](homework.html)
@@ -209,7 +208,6 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Mon, Feb 8
 + MP2 data collection
-+ More on transformations
 + Extending basic designs
 + Evening session: Optional office hours
 + Homework due today:
@@ -219,6 +217,7 @@ Please read the specified sections *before* class that day.
   <div class="col-md-3">
 #### Tue, Feb 9
 + Ethics
++ ANOVA and linear regression
 + Extending basic designs
 + Homework due today:
     + Read Ch 9.3

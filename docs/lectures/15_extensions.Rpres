@@ -1,19 +1,19 @@
 Extending the Four Basic Designs
 ========================================================
 author: Prof Randi Garcia
-date: April 3, 2019
+date: February 8, 2021
 autosize: true
 transition: linear
 transition-speed: default
 font-family: 'Helvetica'
 
 
-Reading Free-Write (5 minutes)
+Reading contemplation question
 ========================================================
 
 People with severe psychiatric problems find it harder to focus their attention; this theory predicts that psychiatrically normal subjects would be less affected than others by distracting sounds while they tried to remember things. In an experiment, participants were classified as 1) schizophrenic, 2) schizotypal, 3) borderline, or 4) psychiatrically normal. In each of a series of trials, subjects heard a voice read a series of digits and were asked to repeat them back. The digit strings were either 3, 4, or 7 digits long, and the trials either had a distracting male voice between the female voice reading the letters or it did not have interference. One response was defined by lumping together all the trials of a given type, such as four digits/no interference, and adding up the number of times the subject remembered the string correctly. 
 
-Reading Free-Write Answers
+Reading Answers
 ========================================================
 
   1. Response is number of correct recollections
@@ -30,45 +30,98 @@ Reading Free-Write Answers
 Announcements
 ========================================================
 
-- HW 7 is due Friday at 12:00pm
-- [HW 8](labs/homework9.html) is due on Friday 4/18 at 12:00p (on Moodle)
-- Project data collection should be underway!
+- HW7 grades are posted
+- HW8 is due tomorrow at 9:20p
+- Tonight's session is office hours instead
+  - Please [sign up](https://randigarcia.youcanbook.me/)! 
     
 Agenda
 ======================================================== 
 
-- ANOVA for Split plot design
-- Analysis in R
+- Review from Thurs
+- Effect sizes
+- Data collection for MP2!
+- Design practice
 - Extending designs by factorial crossing
 
-Example: Diabetic Dogs
+Effect Sizes and Confidence Intervals
 =======================================================
 
-The disease diabetes affects the rate of turnover of lactic acid in a system of biochemical reactions called the Cori cycle. This experiment compares two methods of using radioactive carbon-14 to measure rate of turnover. Method 1 is injection all at once, and method 2 is infused continuously. 10 dogs were sorted into two groups, 5 were controls and 5 had their pancreas removed (to make it diabetic). The rate of turnover was then measured twice for each dog, once for each method. The order of the two methods was randomly assigned. 
+- The inference test in ANOVA only tells us if effects are **detectable**, not their size or direction.
+- Practical significance is different from **statistical** significance.
+- We need to think about which effects we want to construct confidence intervals for (or calculate an effect size for). Some options:
+  - How far away a specific condition is from the grand average.
+  - How far away a specific condition is from another condition. 
+  - How far away a specific condition (or set of conditions) is(are) from a(nother) set of conditions.
+  - Additional effect size option: The overall variance explained by a factor of interest.
 
-Draw the factor diagram for the data on page 263. (ignore the ordering for now)
+Effect Sizes
+=======================================================
+- The overall variance explained by a factor of interest.
+  - $\eta^2$ (eta squared)
+- How far away a specific condition is from the grand average.
+  - Confidence intervals.
+- How far away a specific condition is from another condition. 
+  - Confidence intervals and/or Cohen's d
+- How far away a specific condition (or set of conditions) is(are) from a(nother) set of conditions.
+  - Confidence intervals and/or Cohen's d
 
-Algebraic Notation for the Spilt Plot Design
+Effect Sizes
+=======================================================
+- The overall variance explained by a factor of interest
+  - Same as $R^2$ in regression
+  
+$$\eta^2 = \frac{{MS}_{treatment}}{{MS}_{total}}$$
+
+  - For BF[1]: 
+
+$$\eta^2 = \frac{{MS}_{treatment}}{{MS}_{treatment} + {MS}_{error}}$$  
+
+- Cohen's d (0.2 is "small", 0.5 is "medium", and 0.8 is "large")
+$$d = \frac{\bar{y}_{1.}-\bar{y}_{2.}}{{s}_{pooled}}$$
+
+
+Data Collection!! 
 =======================================================
 
-$${y}_{ijk}={\mu}+{\alpha}_{i}+{\beta}_{j(i)}+{\gamma}_{k}+({\alpha\gamma})_{ik}+{e}_{ijk}$$
+- Are we ready?...
+- Did you test your survey and it appears collect?
+- Generate test data and download your test dataset?
+- Delete fake responses and reset counts in the randomizer?
 
-- ${\mu}$ is the benchmark
-- ${\alpha}_{i}$ effect of level i of the between-blocks factor, $i$ from $1$ to $a$
-- ${\beta}_{j(i)}$ effect of block $j$ (for level $i$ of the within block factor), $j$ from $1$ to $n$
-- ${\gamma}_{k}$ effect of level $k$ of the within-block factor, $k$ from $1$ to $t$
-- $({\alpha\gamma})_{ik}$ interaction effect for level $i$ of the between-blocks factor with level $k$ of the within-blocks factor
+- Let's do it! Please participate in 5 to 6 experiments (not yours). 
+  - Here is the [sheet](https://docs.google.com/spreadsheets/d/1N3x8QzJ6hWPYg7ALIWS96XQJR7A3s2Mu1uf4SD85HqM/edit#gid=0)
 
-Formal ANOVA for the Spilt Plot Design
+Design practice
 =======================================================
 
-| Source | SS | df | MS | F |
-|------:|:-----:|:-----:|:------:|:------:|
-| Between | $\sum_{i=1}^{a}tn(\bar{y}_{i..}-\bar{y}_{...})^{2}$ | $a-1$ | $\frac{{SS}_{A}}{{df}_{A}}$ | $\frac{{MS}_{A}}{{MS}_{B}}$ |
-| Blocks | $t\sum_{i=1}^{a}\sum_{j=1}^{n}(\bar{y}_{ij.}-\bar{y}_{i..})^{2}$ | $N-a$ | $\frac{{SS}_{B}}{{df}_{B}}$ | $\frac{{MS}_{B}}{{MS}_{E}}$ |
-| Within | $\sum_{k=1}^{t}N(\bar{y}_{..k}-\bar{y}_{...})^{2}$ | $t-1$ | $\frac{{SS}_{T}}{{df}_{T}}$ | $\frac{{MS}_{T}}{{MS}_{E}}$ |
-| Interaction | $\sum_{i=1}^{a}\sum_{k=1}^{t}n(\bar{y}_{i.k}-\bar{y}_{i..}-\bar{y}_{..k}+\bar{y}_{...})^{2}$ | $(a-1)(t-1)$ | $\frac{{SS}_{AT}}{{df}_{AT}}$ | $\frac{{MS}_{AT}}{{MS}_{E}}$ |
-| Error | $\sum_{i=1}^{a}\sum_{j=1}^{n}\sum_{k=1}^{t}({y}_{ijk}-\bar{y}_{i.k}-\bar{y}_{ij.}+\bar{y}_{i..})^{2}$ | $(N-a)(t-1)$ | $\frac{{SS}_{E}}{{df}_{E}}$ | |
+[Google slides for group work](https://docs.google.com/presentation/d/1T68byHKDVkNGKedKjl3uFLbrK6_NUKBeHPI7bvXi7Mo/edit?usp=sharing)
+
+Parsnip Plants
+=======================================================
+
+Under the control conditions of this study, wild parsnip plants averaged about a thousand seeds from their first set of flowers (primary umbels), about twice as many from the second set of flowers, but only about 250 from the third set. For plants attacked by the parsnip webworm, which destroyed most of the primary umbels, the pattern was quite different: the seed production from primary, secondary, and tertiary umbels averaged about 200, 2400, and 1300, respectively.
+
+Swimsuit/Sweater Study
+=======================================================
+
+Objectification theory (Fredrickson & Roberts, 1997) posits that American culture socializes women to adopt observers' perspectives on their physical selves. This self-objectification is hypothesized to (a) produce body shame, which in turn leads to restrained eating, and (b) consume attentional resources, which is manifested in diminished mental performance. An experiment manipulated self-objectification by having participants try on a swimsuit or a sweater. Further, it tested 21 women and 20 men, in each condition, and found that these effects on body shame and restrained eating replicated for women only. Additionally, self-objectification diminished math performance for women only. 
+
+Crabgrass
+=======================================================
+
+The purpose of this experiment was to study the way one species of crabgrass competed with itself and with another species for nitrogen (N), phosphorus (P), and potassium (K). Bunches of crabgrass were planted in vermiculite, in 16 Styrofoam cups; after the seeds had sprouted, the plants were thinned to 20 plants per cup. Each of the 16 cups were randomly assigned to get one of 8 nutrient combinations added to its vermiculite. For example, yes-nitrogen/no-phosphorus/yes-potassium. The response is mean dry weight per plant, in milligrams.
+
+Osomoregulation
+=======================================================
+
+Worms that live at the mouth of a river must deal with varying concentrations of salt. Osomoregulating worms are able to maintain relatively constant concentration of salt in the body. An experiment wanted to test the effects of mixtures of salt water on two species of worms: Nereis virens (N) and Goldfingia gouldii (G). Eighteen worms of each species were weighted, then randomly assigned in equal numbers to one of three conditions. Six worms of each kind were placed in 100% sea water, 67% sea water, or 33% sea water. The worms were then weighted after 30, 60, and 90 minutes, then placed in 100% sea water and weighted one last time 30 minutes later.  The response was body weight as percentage of initial body weight. 
+
+Creepy Animals
+=======================================================
+
+The effects of exposure to images of different domestic animal species in either aggressive or submissive postures on mood was tested with a split-plot/repeated measures design. Using a computer to randomize, participants were randomly assigned to either view images of dogs or images of cats. All participants saw both an aggressive animal and a submissive animal, and their moods were assessed via self-report after each image. The order of presentation (aggressive then submission, or submissive then aggressive) was randomized to control for order effects.
+
 
 Extensions by Factorial Crossing
 =======================================================
@@ -79,12 +132,12 @@ Take our diabetic dogs example, and now let us add in the fact that **the order 
     - We have an order factor and there are two levels: order 1 and order 2  
     - The new design is a SP/RM[2,1]
     
-Example
+Example: Crabgrass
 =======================================================
 
 The purpose of this experiment was to study the way one species of crabgrass competed with itself and with another species for nitrogen (N), phosphorus (P), and potassium (K). Bunches of crabgrass were planted in vermiculite, in 16 Styrofoam cups; after the seeds head srouted, the plants were thinned to 20 plants per cup. Each of the 16 cups were randomly assigned to get one of 8 nutrient combinations added to its vermiculite. For example, yes-nitrogen/no-phosphorus/yes-potassium. The response is mean dry weight per plant, in milligrams.
 
-Example
+Example: Osmoregulation
 =======================================================
 
 Worms that live at the mouth of a river must deal with varying concentrations of salt. Osomoregulating worms are able to maintain reltaively constant concentration of salt in the body. An experiment wanted to test the effects of mixtures of salt water on two species of worms: Nereis virens (N) and Goldfingia gouldii (G). Eighteen worms of each species were weighted, then randomly assigned in equal numbers to one of three conditions. Six worms of each kind were placed in 100% sea water, 67% sea water, or 33% sea water. The worms were then weighted after 30, 60, and 90 minutes, then placed in 100% sea water and weighted one last time 30 minutes later.  The response was body weight as percentage of initial body weight. 
@@ -126,8 +179,3 @@ Rule for Compound between Block F-ratios
 =======================================================
 
 $$F = \frac{{MS}_{Factor}}{{MS}_{Blocks}}$$
-
-Analysis in R
-=======================================================
-
-[See r code](15_extensions_inR.Rmd)

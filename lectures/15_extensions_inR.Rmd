@@ -1,13 +1,6 @@
 ---
   title: "Model Extensions in R"
 author: "Randi Garcia and Katherine Halvorsen"
-output:
-  html_document:
-  theme: cerulean
-highlight: pygments
-css: ../lab.css
-toc: true
-toc_float: true
 ---
   
 ```{r global-options, include=FALSE}
@@ -75,10 +68,11 @@ You can also do this with a linear model.
 
 ```{r}
 library(lme4)
+library(lmerTest)
 
 mod2 <- lmer(Data ~ Time*Concentration*Species + (1|Worms) + Concentration*Species, data = osmo)
 
-anova(mod2)
+summary(mod2)
 ```
 
 # Compound Within-Block Factors, CB[2]

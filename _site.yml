@@ -73,8 +73,8 @@ navbar:
     - text: 19 - Design Practice
       href: lectures/14d_design_practice.html        
     - text: 20 - Extending the Basic Designs
-#      href: lectures/15_extensions.html   
-#    - text: 17 - Extending the Basic Designs (cont.)
+      href: lectures/15_extensions.html   
+    - text: 21 - Extending the Basic Designs (cont.)
 #      href: lectures/16_extensions_cont.html    
 #    - text: 18 - Multiple Comparisons
 #      href: lectures/17_multiple_comparisons.html         
@@ -96,9 +96,9 @@ navbar:
       href: lectures/09_bf2_inR.Rmd    
     - text: 05 - CB[1], Latin Square, SP/RM[1,1] Design in R
       href: lectures/13_spitplot_design_inR.Rmd       
-#    - text: 05 - Extensions in R
-#      href: lectures/15_extensions_inR.Rmd    
-#    - text: 06 - Multiple Comparisons
+    - text: 06 - Extensions in R
+      href: lectures/15_extensions_inR.Rmd    
+    - text: 07 - Multiple Comparisons
 #      href: lectures/18_multiple_comparisons_and_assumptions.Rmd             
   - text: Homework
     menu:
