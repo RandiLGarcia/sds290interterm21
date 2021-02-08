@@ -14,29 +14,25 @@ Credit also to three people who served as a starting point for these resources: 
 ***
 
   1. Ethical collection of human subjects data
-    - [Video](https://www.youtube.com/watch?v=CzNANZnoiRs)
-      - This one is nice because it introduces the question of how we might apply the principals you learned in your CITI training to the social media/technology space.  
+      - [Video](https://www.youtube.com/watch?v=CzNANZnoiRs)
+        - This one is nice because it introduces the question of how we might apply the principals you learned in your CITI training to the social media/technology space.  
   2. Fisher (ANOVA inventor) and Eugenics 
-    - [Call to Remove Fisher's name from award](https://twitter.com/daniela_witten/status/1268392721275744256?s=09)
-    - [Eugenics and Francis Galton](https://www.youtube.com/watch?v=JeCKftkNKJ0)
-      - Galton had a lot of impact on the world of statistics but consider the effects it had on people
-    - [Learning for Justice](https://www.learningforjustice.org/magazine/how-samuel-morton-got-it-wrong) and p.115 of textbook talk about Samuel Morton
-    - What happens when a good thing comes from someone who did wrong? 
-      - Another example: [Buzzfeed's Article on DataCamp](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup)
-  3. P-hacking
-    - Article (https://www.wired.com/story/were-all-p-hacking-now/)
-    - [Video](https://www.youtube.com/watch?v=Gx0fAjNHb1M)
-    - [P-hacking and jelly beans](https://xkcd.com/882/)
+      - [Call to Remove Fisher's name from award](https://twitter.com/daniela_witten/status/1268392721275744256?s=09)
+      - [Eugenics and Francis Galton](https://www.youtube.com/watch?v=JeCKftkNKJ0)
+        - Galton had a lot of impact on the world of statistics but consider the effects it had on people
+      - [Learning for Justice](https://www.learningforjustice.org/magazine/how-samuel-morton-got-it-wrong) and p.115 of textbook talk about Samuel Morton
+      - What happens when a good thing comes from someone who did wrong? 
+        - Another example: [Buzzfeed's Article on DataCamp](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup)
+  3. P-hacking  
+      - [Article](https://www.wired.com/story/were-all-p-hacking-now/)
+      - [Video](https://www.youtube.com/watch?v=Gx0fAjNHb1M)
+      - [P-hacking and jelly beans](https://xkcd.com/882/)
   4. Ethics of collaboration  
-    - [Resources for Research Ethics Education](http://research-ethics.org/topics/research-misconduct/#summary)
-    - Specifically used the research misconduct one; I didn't think collaboration on this page work well 
+      - [Resources for Research Ethics Education](http://research-ethics.org/topics/research-misconduct/#summary)
+      - Specifically used the research misconduct one; I didn't think collaboration on this page work well 
   5. Ethics and Social Media 
-    - [The Social Dilemma](https://www.youtube.com/watch?v=uaaC57tcci0) (Netflix documentary)
-    - [The Great Hack](https://www.youtube.com/watch?v=iX8GxLP1FHo) (Netflix documentary)
-    
-
-  - [Psychological Research](https://www.youtube.com/watch?v=hFV71QPvX2I) (Crash Course)
-    - In case people want to know about the different ways to conduct research in Psych
+      - [The Social Dilemma](https://www.youtube.com/watch?v=uaaC57tcci0) (Netflix documentary trailer)
+      - [The Great Hack](https://www.youtube.com/watch?v=iX8GxLP1FHo) (Netflix documentary trailer)
  
 ***
 
