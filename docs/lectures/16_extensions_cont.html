@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Extending the Four Basic Designs</title>
+  <title>Extending the Four Basic Designs II</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -794,7 +794,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>Extending the Four Basic Designs</h1><p>Prof Randi Garcia<br/>April 8, 2019</p>
+<h1>Extending the Four Basic Designs II</h1><p>Prof Randi Garcia<br/>February 9, 2021</p>
 
 <div class="slideContent" >
 
@@ -802,7 +802,7 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Reading Free-Write (5 minutes)</h3>
+<h3>Reading contemplation question</h3>
 <div class="slideContent" >
 <p>In example 9.5 on page 382 a psychology experiment with compound within block factors
 is presented. The choice between the additive model and nonadditive model depends on 
@@ -813,7 +813,7 @@ pick. That is, give an interpretation if you found that the interaction was stat
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Reading Free-Write Answers</h3>
+<h3>Reading contemplation Answers</h3>
 <div class="slideContent" >
 <ol>
 <li>The differences in time to complete the task caused by frame size are different 
@@ -831,23 +831,13 @@ other subjects. </li>
 <h3>Announcements</h3>
 <div class="slideContent" >
 <ul>
-<li>No Class
+<li>HW8 is due now</li>
+<li>MP2 and Quiz 2 are due on Friday night
 
 <ul>
-<li><strong>Wed Apr 10</strong>: Inclusion conference</li>
-<li><strong>Mon Apr 15</strong>: I am away giving a talk</li>
+<li>Interest in presenting on Thurs? </li>
 </ul></li>
-<li>Stephanie Hicks lecture Apr 18 at 6pm in Seelye 106
-
-<ul>
-<li>Post comment on slack</li>
-</ul></li>
-<li>HW#8 due on Friday Apr 19 at noon</li>
-<li>Exam 2 in two weeks!
-
-<ul>
-<li>Will cover Chapter 9</li>
-</ul></li>
+<li>Please <a href="https://randigarcia.youcanbook.me/">sign up</a> for Thurs office hours. </li>
 </ul>
 
 </div>
@@ -857,9 +847,68 @@ other subjects. </li>
 <h3>Agenda</h3>
 <div class="slideContent" >
 <ul>
+<li>Ethics in data science/research</li>
+<li>Design Practice</li>
 <li>Extending designs by factorial crossing</li>
-<li>Extensions in R</li>
+<li>Compound within-block factors</li>
+<li>ANOVA and regression (time?)</li>
 </ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Ethics</h3>
+<div class="slideContent" >
+<p>See Resources drop-down menu on <a href="https://randilgarcia.github.io/sds290interterm21/index.html">course website</a>. </p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Design practice</h3>
+<div class="slideContent" >
+<p><a href="https://docs.google.com/presentation/d/1T68byHKDVkNGKedKjl3uFLbrK6_NUKBeHPI7bvXi7Mo/edit?usp=sharing">Google slides for group work</a></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Parsnip Plants</h3>
+<div class="slideContent" >
+<p>Under the control conditions of this study, wild parsnip plants averaged about a thousand seeds from their first set of flowers (primary umbels), about twice as many from the second set of flowers, but only about 250 from the third set. For plants attacked by the parsnip webworm, which destroyed most of the primary umbels, the pattern was quite different: the seed production from primary, secondary, and tertiary umbels averaged about 200, 2400, and 1300, respectively. (Please think of parsnip plants as blocks. Each plant gets 3 measurements, 1 from each umbel.)</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Swimsuit&#x2F;Sweater Study</h3>
+<div class="slideContent" >
+<p>Objectification theory (Fredrickson &amp; Roberts, 1997) posits that American culture socializes women to adopt observers&#39; perspectives on their physical selves. This self-objectification is hypothesized to (a) produce body shame, which in turn leads to restrained eating, and (b) consume attentional resources, which is manifested in diminished mental performance. An experiment manipulated self-objectification by having participants try on a swimsuit or a sweater. Further, it tested 20 women and 20 men, in each condition, and found that the hypothesized effects on body shame (and restrained eating) were present for women only. Additionally, self-objectification diminished math performance for women only. (Please consider only one response variable: body shame.) </p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Crabgrass</h3>
+<div class="slideContent" >
+<p>The purpose of this experiment was to study the way one species of crabgrass competed with itself and with another species for nitrogen (N), phosphorus (P), and potassium (K). Bunches of crabgrass were planted in vermiculite, in 16 Styrofoam cups; after the seeds had sprouted, the plants were thinned to 20 plants per cup. Each of the 16 cups were randomly assigned to get one of 8 nutrient combinations added to its vermiculite. For example, yes-nitrogen/no-phosphorus/yes-potassium. The response is mean dry weight per plant, in milligrams.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Osomoregulation</h3>
+<div class="slideContent" >
+<p>Worms that live at the mouth of a river must deal with varying concentrations of salt. Osomoregulating worms are able to maintain relatively constant concentration of salt in the body. An experiment wanted to test the effects of mixtures of salt water on two species of worms: Nereis virens (N) and Goldfingia gouldii (G). Eighteen worms of each species were weighted, then randomly assigned in equal numbers to one of three conditions. Six worms of each kind were placed in 100% sea water, 67% sea water, or 33% sea water. The worms were then weighted after 30, 60, and 90 minutes, then placed in 100% sea water and weighted one last time 30 minutes later.  The response was body weight as percentage of initial body weight. </p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Creepy Animals</h3>
+<div class="slideContent" >
+<p>The effects of exposure to images of different domestic animal species in either aggressive or submissive postures on mood was tested with a split-plot/repeated measures design. Using a computer to randomize, participants were randomly assigned to either view images of dogs or images of cats. All participants saw both an aggressive animal and a submissive animal, and their moods were assessed via self-report after each image. The order of presentation (aggressive then submission, or submissive then aggressive) was randomized to control for order effects.</p>
 
 </div>
 
@@ -872,22 +921,6 @@ other subjects. </li>
 <p>Take our diabetic dogs example, and now let us add in the fact that <strong>the order of the two methods was randomly assigned.</strong> What design do we have now?<br/>
     - We have an order factor and there are two levels: order 1 and order 2<br/>
     - The new design is a SP/RM[2,1]</p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Example</h3>
-<div class="slideContent" >
-<p>The purpose of this experiment was to study the way one species of crabgrass competed with itself and with another species for nitrogen (N), phosphorus (P), and potassium (K). Bunches of crabgrass were planted in vermiculite, in 16 Styrofoam cups; after the seeds had sprouted, the plants were thinned to 20 plants per cup. Each of the 16 cups were randomly assigned to get one of 8 nutrient combinations added to its vermiculite. For example, yes-nitrogen/no-phosphorus/yes-potassium. The response is mean dry weight per plant, in milligrams.</p>
-
-</div>
-
-</section>
-<section data-transition="linear" data-transition-speed="default">
-<h3>Example</h3>
-<div class="slideContent" >
-<p>Worms that live at the mouth of a river must deal with varying concentrations of salt. Osomoregulating worms are able to maintain relatively constant concentration of salt in the body. An experiment wanted to test the effects of mixtures of salt water on two species of worms: Nereis virens (N) and Goldfingia gouldii (G). Eighteen worms of each species were weighted, then randomly assigned in equal numbers to one of three conditions. Six worms of each kind were placed in 100% sea water, 67% sea water, or 33% sea water. The worms were then weighted after 30, 60, and 90 minutes, then placed in 100% sea water and weighted one last time 30 minutes later.  The response was body weight as percentage of initial body weight.</p>
 
 </div>
 
@@ -919,17 +952,14 @@ other subjects. </li>
 <h3>Compound within Block Factors</h3>
 <div class="slideContent" >
 <ol>
-<li><strong>The additive model</strong> - assumes that chance error is the same for all within-block 
-factors, thus we could pool residual terms.</li>
-<li><strong>The non-additive model</strong> - does not make this (often incorrect) assumption, but 
-tests using this model are lower in power. </li>
+<li><strong>The additive model</strong> - assumes that chance error is the same for all within-block factors, thus we could pool residual terms.</li>
+<li><strong>The non-additive model</strong> - does not make this (often incorrect) assumption, but tests using this model are lower in power. </li>
 </ol>
 
 <p>How can we decide? </p>
 
 <ul>
-<li>Think about whether or not you would expect block X treatment interaction effects. If 
-you would, then the additive model will be wrong. </li>
+<li>Think about whether or not you would expect block X treatment interaction effects. If you would, then the additive model will be wrong. </li>
 </ul>
 
 </div>
@@ -955,6 +985,38 @@ you would, then the additive model will be wrong. </li>
 <h3>Analysis in R</h3>
 <div class="slideContent" >
 <p><a href="15_extensions_inR.Rmd">See r code</a></p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>ANOVA is a linear model</h3>
+<div class="slideContent" >
+<ul>
+<li>The ANOVA for the BF[1] is just regression with a quantitative response variable and a single categorical explanatory variable.</li>
+<li>A two-sample t-test is just a special case of ANOVA where there are only two groups</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>ANOVA is a linear model</h3>
+<div class="slideContent" >
+<ul>
+<li>Consider the following formulations <em>of the same model</em>:</li>
+</ul>
+
+<p>\[ y_{ij} = \mu_i + \epsilon_{ij}, \text{ where } \epsilon_{ij} \sim N(0, \sigma) \]
+\[ y_{ij} = \mu + \alpha_i + \epsilon_{ij}, \text{ where } \epsilon_{ij} \sim N(0, \sigma) \]
+\[ y_{ij} = \mu_1 + \beta_i \cdot X_i + \epsilon_{ij}, \text{ where } \epsilon_{ij} \sim N(0, \sigma) \]</p>
+
+<p>for groups \( i = 1,\ldots, a \) and individuals \( j=1,\ldots,n_i \), with common standard deviation \( \sigma \)</p>
+
+<ul>
+<li>The \( \mu_i \)&#39;s are the group means, \( \mu \) is the grand mean, the \( \alpha_i \)&#39;s are the group effects, and the  \( \beta_i \)&#39;s are the group effects relative to the <em>reference group</em>.</li>
+<li>The models are the same, because the \( \hat{y}_{ij} \)&#39;s are all the same.</li>
+</ul>
 
 </div>
 

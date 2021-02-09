@@ -205,7 +205,7 @@ Please read the specified sections *before* class that day.
 ***
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Mon, Feb 8
 + MP2 data collection
 + Extending basic designs
