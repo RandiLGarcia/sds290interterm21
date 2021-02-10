@@ -79,7 +79,7 @@ navbar:
     - text: 21 - Extending the Basic Designs II
       href: lectures/16_extensions_cont.html    
     - text: 22 - Multiple Comparisons
-#      href: lectures/17_multiple_comparisons.html         
+      href: lectures/17_multiple_comparisons.html         
 #    - text: 18 - Fisher Assumptions
 #      href: lectures/18_fisher_assumptions.html 
 #    - text: 19 - Exam 2 Review   
@@ -101,7 +101,7 @@ navbar:
     - text: 06 - Extensions in R
       href: lectures/15_extensions_inR.Rmd    
     - text: 07 - Multiple Comparisons
-#      href: lectures/18_multiple_comparisons_and_assumptions.Rmd             
+      href: lectures/18_multiple_comparisons_and_assumptions.Rmd             
   - text: Homework
     menu:
     - text: Problem Sets

@@ -214,7 +214,7 @@ Please read the specified sections *before* class that day.
     + Read Ch. 9.1-9.2  
   </div>
   
-  <div class="col-md-3">
+  <div class="col-md-3 past">
 #### Tue, Feb 9
 + Ethics
 + ANOVA and linear regression
@@ -235,8 +235,8 @@ Please read the specified sections *before* class that day.
   
   <div class="col-md-3">
 #### Thurs, Feb 11
-+ MP2 Presentations??
-+ Alternatives to ANOVA
++ (formal) Class cancelled 
+  - Optional drop in time for questions
 + Homework due today:
     + **MP2 Due Friday Feb 12 at 11:55p**
     + **Quiz 2 Due Friday Feb 12 at 11:55p**

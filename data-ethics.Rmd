@@ -30,6 +30,7 @@ Credit also to three people who served as a starting point for these resources: 
   4. Ethics of collaboration  
       - [Resources for Research Ethics Education](http://research-ethics.org/topics/research-misconduct/#summary)
       - [Example scenario](https://statmodeling.stat.columbia.edu/2017/11/11/student-bosses-want-p-hack-dont-even-know/) 
+      - [Rebekah Jones](https://statmodeling.stat.columbia.edu/2017/11/11/student-bosses-want-p-hack-dont-even-know/) and the ethics of reporting COVID numbers (thank you to Angela Jauregui for sharing)
   5. Ethics and Social Media 
       - [The Social Dilemma](https://www.youtube.com/watch?v=uaaC57tcci0) (Netflix documentary trailer)
       - [The Great Hack](https://www.youtube.com/watch?v=iX8GxLP1FHo) (Netflix documentary trailer)
