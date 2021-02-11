@@ -112,10 +112,10 @@ the process of working on this project. Rather, the oral presentation
 should contain the *minimal* set of R code that is necessary to
 understand your results and findings in full. If you make a claim, it
 *must* be justified by explicit calculation. A knowledgeable reviewer
-should be able to compile your accompaning `.Rmd` file without modification, and
+should be able to compile your accompanying `.Rmd` file without modification, and
 verify every statement that you have made. All of the R code necessary
-to produce your figures and tables *must* appear in the accompaning `.Rmd` file. 
-In short, the oral presentation and accompaning `.Rmd` file should enable a reviewer to
+to produce your figures and tables *must* appear in the accompanying `.Rmd` file. 
+In short, the oral presentation and accompanying `.Rmd` file should enable a reviewer to
 reproduce your work in full.
 
 ### Tone
@@ -155,7 +155,8 @@ Your oral presentation should follow this basic format:
     research question. You will be using ANOVA here, but also present 
     visualization that show the data and test the Fisher assumptions. 
     You should interpret effect sizes and CIs in context and explain their 
-    relevance. What does your model tell us that we didn't already know before? 
+    relevance. **(Note that CI's and effect sizes are recommended but not required.)** What does 
+    your model tell us that we didn't already know before? 
     You also want to include null results, but be careful about how you interpret 
     them. For example, you may want to say something along the lines of: "we 
     found no evidence that factor $A$ has an effect on response variable $y$." 
